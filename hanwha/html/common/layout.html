@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="styleSheet" href="/hanwha/css/reset.css">
+    <link rel="styleSheet" href="/hanwha/css/layout.css">
+    <link rel="styleSheet" href="/hanwha/css/element-ui.css">
+</head>
+<body>
+<!-- ********************** HTML Layout : Start ******************* -->
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <h1><object type="image/svg+xml" class="hanwha_logo" data="/hanwha/svg/hanwha_logo.svg"></object></h1>
+            <div id="gnb">
+                <gnb-component></gnb-component>
+            </div>
+        </div>
+        <!-- // header -->
+        <!-- container -->
+        <div id="container">
+            <div id="lnb">
+                <lnb-component></lnb-component>
+            </div>
+            <div id="contents">
+                <router-view name="layoutTab"></router-view>
+                <router-view name="layoutCont"></router-view>
+            </div>
+        </div>
+        <!-- // container -->
+        <div id="footer"></div>
+    </div>
+<!-- ********************** HTML Layout : End ********************* -->
+</body>
+<!-- ********************** Template : Start ********************** -->
+<!-- gnb : Start -->
+<template id="gnbTemplate">
+    <ul class="menu-list">
+        <li v-for="(menu, index, isActive) in menulist" @click="thisActive(index)">
+            <a v-if="menu.isActive" class="active" href="javascript:void(0);">{{ menu.menu }}</a>
+            <a v-else href="javascript:void(0);">{{ menu.menu }}</a>
+        </li>
+    </ul>
+</template>
+<!-- gnb : End -->
+<!-- lnb : Start -->
+<template id="lnbTemplate">
+    <ul class="menu-list">
+        <li v-for="(menu, index) in menulist" @click="thisActive(index)">
+            <a v-if="menu.isActive" class="active" href="javascript:void(0);">{{ menu.menu }}</a>
+            <a v-else href="javascript:void(0);">{{ menu.menu }}</a>
+        </li>
+    </ul>
+</template>
+<!-- lnb : End -->
+<!-- contTab : Start -->
+<template id="contTab">
+    <ul class="menu-tab">
+        <li><router-link to="/table">Table</router-link></li>
+        <li><router-link to="/form">Form</router-link></li>
+        <li><router-link to="/input">Input</router-link></li>
+        <li><router-link to="/select">Select</router-link></li>
+        <li><router-link to="/textarea">Textarea</router-link></li>
+        <li><router-link to="/radio">Radio Button</router-link></li>
+        <li><router-link to="/checkbox">Checkbox</router-link></li>
+        <li><router-link to="/carousel">Carousel</router-link></li>
+        <li><router-link to="/picker">Picker</router-link></li>
+        <li><router-link to="/button">button</router-link></li>
+        <li><router-link to="/paging">paging</router-link></li>
+        <li><router-link to="/popup">popup</router-link></li>
+    </ul>
+</template>
+<!-- contTab : End -->
+<!-- Table : Start -->
+<template id="layoutTable">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Basic Table</h3>
+            <el-table :data="tableData">
+                <el-table-column prop="date" label="Date" width="180"></el-table-column>
+                <el-table-column prop="name" label="Name" width="180">
+                </el-table-column>
+                <el-table-column prop="address" label="Address">
+                </el-table-column>
+            </el-table>
+        </div>
+        <div class="temp-cont">
+            <h3>Rowspan and colspan</h3>
+            <el-table :data="tableData">
+                <el-table-column prop="date" label="Date">
+                </el-table-column>
+                <el-table-column label="Delivery Info">
+                    <el-table-column prop="name" label="Name">
+                    </el-table-column>
+                    <el-table-column label="Address Info">
+                        <el-table-column prop="state" label="State">
+                        </el-table-column>
+                        <el-table-column prop="city" label="City">
+                        </el-table-column>
+                        <el-table-column prop="address" label="Address">
+                        </el-table-column>
+                        <el-table-column prop="zip" label="Zip">
+                        </el-table-column>
+                    </el-table-column>
+                </el-table-column>
+            </el-table>
+        </div>
+        <div class="temp-cont">
+            <h3>Sorting</h3>
+            <el-table :data="tableData" :default-sort="{prop: 'date', order: 'descending'}">
+                <el-table-column prop="date" label="Date" sortable width="180">
+                </el-table-column>
+                <el-table-column prop="name" label="Name" width="180">
+                </el-table-column>
+                <el-table-column prop="address" label="Address">
+                </el-table-column>
+            </el-table>
+        </div>
+        <div class="temp-cont">
+            <h3>Expandable row</h3>
+            <el-table :data="tableData">
+                <el-table-column type="expand">
+                    <template slot-scope="props">
+                        <p>State: {{ props.row.state }}</p>
+                        <p>City: {{ props.row.city }}</p>
+                        <p>Address: {{ props.row.address }}</p>
+                        <p>Zip: {{ props.row.zip }}</p>
+                    </template>
+                </el-table-column>
+                <el-table-column label="Date" prop="date">
+                </el-table-column>
+                <el-table-column label="Name" prop="name">
+                </el-table-column>
+            </el-table>
+        </div>
+    </div>
+</template>
+<!-- Table : End -->
+<!-- Form : Start -->
+<template id="layoutForm">
+    <div class="template">
+        <h3>Form</h3>
+        <el-form ref="form" :model="form" label-width="120px">
+            <el-form-item label="Activity name">
+                <el-input v-model="form.name"></el-input>
+            </el-form-item>
+            <el-form-item label="Activity zone">
+                <el-select v-model="form.region" placeholder="please select your zone">
+                <el-option label="Zone one" value="shanghai"></el-option>
+                <el-option label="Zone two" value="beijing"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="Activity time">
+                <el-col :span="4">
+                <el-date-picker type="date" placeholder="Pick a date" v-model="form.date1"></el-date-picker>
+                </el-col>
+                <el-col :span="4">
+                <el-time-picker placeholder="Pick a time" v-model="form.date2"></el-time-picker>
+                </el-col>
+            </el-form-item>
+            <el-form-item label="Instant delivery">
+                <el-switch v-model="form.delivery"></el-switch>
+            </el-form-item>
+            <el-form-item label="Activity type">
+                <el-checkbox-group v-model="form.type">
+                <el-checkbox label="Online activities" name="type"></el-checkbox>
+                <el-checkbox label="Promotion activities" name="type"></el-checkbox>
+                <el-checkbox label="Offline activities" name="type"></el-checkbox>
+                <el-checkbox label="Simple brand exposure" name="type"></el-checkbox>
+                </el-checkbox-group>
+            </el-form-item>
+            <el-form-item label="Resources">
+                <el-radio-group v-model="form.resource">
+                <el-radio label="Sponsor"></el-radio>
+                <el-radio label="Venue"></el-radio>
+                </el-radio-group>
+            </el-form-item>
+            <el-form-item label="Activity form">
+                <el-input type="textarea" v-model="form.desc"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="main" @click="onSubmit">Create</el-button>
+                <el-button>Cancel</el-button>
+            </el-form-item>
+        </el-form>
+    </div>
+</template>
+<!-- Form : End -->
+<!-- Input : Start -->
+<template id="layoutInput">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Input</h3>
+            <el-input placeholder="basic input" v-model="input1" clearable></el-input>
+        </div>
+        <div class="temp-cont">
+            <h3>Readonly Input</h3>
+            <el-input placeholder="readonly input" v-model="input2" readonly="readonly"></el-input>
+        </div>
+        <div class="temp-cont">
+            <h3>Disabled Input</h3>
+            <el-input placeholder="disabled input" v-model="input3" :disabled="true"></el-input>
+        </div>
+        <div class="temp-cont">
+            <h3>Password Input</h3>
+            <el-input placeholder="password input" v-model="input4" show-password></el-input>
+        </div>
+        <div class="temp-cont">
+            <h3>TimePicker</h3>
+            <el-time-select v-model="value1" :picker-options="{start: '08:30',step: '00:15',end: '18:30'}" placeholder="Select time"></el-time-select>
+        </div>
+        <div class="temp-cont">
+            <h3>Date Input</h3>
+            <el-date-picker v-model="value1" type="datetime" placeholder="Select date and time"></el-date-picker>
+        </div>
+        <div class="temp-cont">
+            <h3>Search Input</h3>
+            <el-input placeholder="search input" v-model="input6" clearable><i slot="prefix"
+                        class="el-input__icon el-icon-search"></i></el-input>
+        </div>
+    </div>
+</template>
+<!-- Input : End -->
+<!-- textarea : Start -->
+<template id="layoutTextarea">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Textarea</h3>
+            <el-input type="textarea" :rows="4" placeholder="Textarea" v-model="textarea"></el-input>
+        </div>
+    </div>
+</template>
+<!-- textarea : End -->
+<!-- Select : Start -->
+<template id="layoutSelect">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Select</h3>
+            <el-select v-model="value" clearable placeholder="Select">
+                <el-option v-for="item in options" :key="item.value" :label="item.label"
+                    :value="item.value">
+                </el-option>
+            </el-select>
+        </div>
+        <div class="temp-cont">
+            <h3>Multiple Select</h3>
+            <el-select v-model="value2" clearable
+                placeholder="Select">
+                <el-option v-for="item in options" :key="item.value" :label="item.label"
+                    :value="item.value">
+                </el-option>
+            </el-select>
+            <el-select v-model="value3" clearable placeholder="Select">
+                <el-option v-for="item in options" :key="item.value" :label="item.label"
+                    :value="item.value">
+                </el-option>
+            </el-select>
+        </div>
+        <div class="temp-cont">
+            <h3>Disabled Select</h3>
+            <el-select v-model="value" disabled placeholder="Select">
+                <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+                </el-option>
+            </el-select>
+        </div>
+    </div>
+</template>
+<!-- Select : End -->
+<!-- Radio Button : Start -->
+<template id="layoutRadio">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Radio Button</h3>
+            <el-radio v-model="radio" label="1">Option A</el-radio>
+            <el-radio v-model="radio" label="2">Option B</el-radio>
+            <el-radio v-model="radio" label="disabled" disabled></el-radio>
+            <el-radio v-model="radio" label="selected and disabled" disabled></el-radio>
+        </div>
+    </div>
+</template>
+<!-- Radio Button : End -->
+<!-- Checkbox : Start -->
+<template id="layoutCheckbox">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Checkbox</h3>
+            <el-checkbox-group v-model="checkList">
+                <el-checkbox label="Option A"></el-checkbox>
+                <el-checkbox label="Option B"></el-checkbox>
+                <el-checkbox label="Option C"></el-checkbox>
+                <el-checkbox label="disabled" disabled></el-checkbox>
+                <el-checkbox label="selected and disabled" disabled></el-checkbox>
+            </el-checkbox-group>
+        </div>
+    </div>
+</template>
+<!-- Checkbox : End -->
+<!-- Carousel : Start -->
+<template id="layoutCarousel">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Carousel</h3>
+            <el-carousel indicator-position="outside">
+                <el-carousel-item v-for="item in 4" :key="item">
+                <h3>{{ item }}</h3>
+                </el-carousel-item>
+            </el-carousel>
+        </div>
+    </div>
+</template>
+<!-- Carousel : End -->
+<!-- Picker : Start -->
+<template id="layoutPicker">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Time Picker</h3>
+            <el-time-select v-model="value" :picker-options="{start: '08:30', step: '00:15', end: '18:30'}" placeholder="Select time"></el-time-select>
+        </div>
+        <div class="temp-cont">
+            <h3>Date Picker</h3>
+            <el-date-picker v-model="value" type="date" placeholder="Pick a day"></el-date-picker>
+        </div>
+    </div>
+</template>
+<!-- Picker : End -->
+<!-- Button : Start -->
+<template id="layoutButton">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Button Size</h3>
+            <el-button size="large">large</el-button>
+            <el-button>Default</el-button>
+            <el-button size="small">Small</el-button>
+            <el-button size="mini">Mini</el-button><br /><br />
+            <el-button size="large" round>large</el-button>
+            <el-button round>Default</el-button>
+            <el-button size="small" round>Small</el-button>
+            <el-button size="mini" round>Mini</el-button>
+        </div>
+        <div class="temp-cont">
+            <h3>Basic Button</h3>
+            <el-button>Default</el-button>
+            <el-button type="main">Main</el-button>
+            <el-button type="primary">Primary</el-button>
+            <el-button type="success">Success</el-button>
+            <el-button type="info">Info</el-button>
+            <el-button type="warning">Warning</el-button>
+            <el-button type="danger">Danger</el-button><br /><br />
+            <el-button plain>Plain</el-button>
+            <el-button type="main" plain>Main</el-button>
+            <el-button type="primary" plain>Primary</el-button>
+            <el-button type="success" plain>Success</el-button>
+            <el-button type="info" plain>Info</el-button>
+            <el-button type="warning" plain>Warning</el-button>
+            <el-button type="danger" plain>Danger</el-button><br /><br />
+            <el-button round>Round</el-button>
+            <el-button type="main" round>Main</el-button>
+            <el-button type="primary" round>Primary</el-button>
+            <el-button type="success" round>Success</el-button>
+            <el-button type="info" round>Info</el-button>
+            <el-button type="warning" round>Warning</el-button>
+            <el-button type="danger" round>Danger</el-button><br /><br />
+            <el-button icon="el-icon-search" circle></el-button>
+            <el-button type="primary" icon="el-icon-edit" circle></el-button>
+            <el-button type="success" icon="el-icon-check" circle></el-button>
+            <el-button type="info" icon="el-icon-message" circle></el-button>
+            <el-button type="warning" icon="el-icon-star-off" circle></el-button>
+            <el-button type="danger" icon="el-icon-delete" circle></el-button><br /><br />
+            <el-button disabled>Default</el-button>
+            <el-button type="primary" disabled>Primary</el-button>
+            <el-button type="success" disabled>Success</el-button>
+            <el-button type="info" disabled>Info</el-button>
+            <el-button type="warning" disabled>Warning</el-button>
+            <el-button type="danger" disabled>Danger</el-button><br /><br />
+            <el-button plain disabled>Plain</el-button>
+            <el-button type="primary" plain disabled>Primary</el-button>
+            <el-button type="success" plain disabled>Success</el-button>
+            <el-button type="info" plain disabled>Info</el-button>
+            <el-button type="warning" plain disabled>Warning</el-button>
+            <el-button type="danger" plain disabled>Danger</el-button>
+        </div>
+        <div class="temp-cont">
+            <h3>Text Button</h3>
+            <el-button type="text">Text Button</el-button>
+            <el-button type="text" disabled>Text Button</el-button>
+        </div>
+    </div>
+</template>
+<!-- Button : End -->
+<!-- Paging : Start -->
+<template id="layoutPaging">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Paging</h3>
+            <el-pagination background layout="prev, pager, next" :total="1000">
+            </el-pagination>
+        </div>
+    </div>
+</template>
+<!-- Paging : End -->
+<!-- Popup : Start -->
+<template id="layoutPopup">
+    <div class="template">
+        <div class="temp-cont">
+            <h3>Popup</h3>
+            <el-button type="text" @click="outerVisible = true">open the outer Dialog</el-button>
+            <el-dialog title="Outer Dialog" :visible.sync="outerVisible">
+                <el-dialog width="30%" title="Inner Dialog" :visible.sync="innerVisible" append-to-body>
+                </el-dialog>
+                <div slot="footer" class="dialog-footer">
+                <el-button @click="outerVisible = false">Cancel</el-button>
+                <el-button type="main" @click="innerVisible = true">open the inner Dialog</el-button>
+                </div>
+            </el-dialog>
+        </div>
+    </div>
+</template>
+<!-- Popup : End -->
+<!-- ********************** Template : End ********************** -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="/hanwha/js/element-ui.js"></script>
+<script src="/hanwha/js/layout-template.js"></script>
+<!-- ********************** Vue Js : Start ********************** -->
+<script type="text/javascript">
+    const router = new VueRouter({
+        // hashbang: false,
+        // history: true,
+        routes: [
+            { 
+                path: '/table',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutTalbe
+                }
+            },{ 
+                path: '/form',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutForm
+                }
+            },{ 
+                path: '/input',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutInput
+                }
+            },{ 
+                path: '/select',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutSelect
+                }
+            },{ 
+                path: '/textarea',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutTextarea
+                }
+            },{ 
+                path: '/radio',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutRadio
+                }
+            },{ 
+                path: '/checkbox',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutCheckbox
+                }
+            },{ 
+                path: '/picker',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutPicker
+                }
+            },{ 
+                path: '/button',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutButton
+                }
+            },{ 
+                path: '/paging',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutPaging
+                }
+            },{ 
+                path: '/popup',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutPopup
+                }
+            },{ 
+                path: '/carousel',
+                components: {
+                    layoutTab: contTab,
+                    layoutCont: layoutCarousel
+                }
+            }
+        ]
+    })
+    var vue =new Vue({
+        router,
+        el: '#wrap',
+        data: {},
+        root:  '/hanwha/html/common/layout.html'
+        // watch: {
+        //     '$route': 'fetchData' 라우트가 변경되면 메소드를 다시 호출됩니다.
+        // },
+        // created () {},
+    })
+</script>
+<!-- ********************** Vue Js : End ********************** -->
+</html>

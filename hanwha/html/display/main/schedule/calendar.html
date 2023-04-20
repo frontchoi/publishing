@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="styleSheet" href="/css/reset.css">
+    <link rel="styleSheet" href="/css/layout.css">
+    <link rel="styleSheet" href="/css/element-ui.css">
+</head>
+<!-- ********************** HTML Layout : Start ******************* -->
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header">
+            <h1><object type="image/svg+xml" class="hanwha_logo" data="/svg/hanwha_logo.svg"></object></h1>
+            <div id="gnb">
+                <gnb-component></gnb-component>
+            </div>
+        </div>
+        <!-- // header -->
+        <!-- container -->
+        <div id="container">
+            <div id="lnb">
+                <lnb-component></lnb-component>
+            </div>
+            <div id="contents">
+                <tab-component></tab-component>
+                <cont-component></cont-component>
+            </div>
+        </div>
+        <!-- // container -->
+        <div id="footer"></div>
+    </div>
+</body>
+<!-- ********************** HTML Layout : End ********************* -->
+<!-- ********************** Template : Start ********************** -->
+<!-- 공통 template 수정 X : Start -->
+<template id="gnbTemplate">
+    <ul class="menu-list">
+        <li v-for="(menu, index, isActive) in menulist" @click="thisActive(index)">
+            <a v-if="menu.isActive" class="active" href="javascript:void(0);">{{ menu.menu }}</a>
+            <a v-else href="javascript:void(0);">{{ menu.menu }}</a>
+        </li>
+    </ul>
+</template>
+<template id="lnbTemplate">
+    <ul class="menu-list">
+        <li v-for="(menu, index) in menulist" @click="thisActive(index)">
+            <a v-if="menu.isActive" class="active" href="javascript:void(0);">{{ menu.menu }}</a>
+            <a v-else href="javascript:void(0);">{{ menu.menu }}</a>
+        </li>
+    </ul>
+</template>
+<!-- 공통 template 수정 X : End -->
+<!-- **************** 아래 template 만 수정 : Start **************** -->
+<!-- **************** 아래 template 만 수정 : Start **************** -->
+<!-- **************** 아래 template 만 수정 : Start **************** -->
+<template id="contTab">
+    <ul class="menu-tab">
+        <li class="active"><a href="javascript:void(0)">전시일정</a></li>
+        <li><a href="javascript:void(0)">메인 노출카테고리</a></li>
+    </ul>
+</template>
+<template id="contTemplate">
+    <div class="template">
+        <!-- temp-cont : Start -->
+        <div class="temp-cont">
+            <h3>검색</h3>
+            <el-row :gutter="10">
+                <el-col :xs="6" :sm="4" :md="4" :lg="2" :xl="2">노출 카테고리</el-col>
+                <el-col :xs="6" :sm="8" :md="8" :lg="10" :xl="10">
+                    <el-select v-model="value" clearable placeholder="Select">
+                        <el-option v-for="item in options" :key="item.value" :label="item.label"
+                            :value="item.value">
+                        </el-option>
+                    </el-select>
+                </el-col>
+                <el-col :xs="6" :sm="4" :md="4" :lg="2" :xl="2">유형/타이틀</el-col>
+                <el-col :xs="6" :sm="8" :md="8" :lg="10" :xl="10" class="table">
+                    <el-select v-model="value" clearable placeholder="Select">
+                        <el-option v-for="item in options" :key="item.value" :label="item.label"
+                            :value="item.value">
+                        </el-option>
+                    </el-select>
+                    <el-input placeholder="" v-model="input1" clearable></el-input></el-col>
+                </el-col>
+            </el-row>
+            <el-row :gutter="10">
+                <el-col :xs="8" :sm="4" :md="4" :lg="2" :xl="2">전시상태</el-col>
+                <el-col :xs="4" :sm="8" :md="8" :lg="10" :xl="10">
+                    <el-select v-model="value" clearable placeholder="Select">
+                        <el-option v-for="item in options" :key="item.value" :label="item.label"
+                            :value="item.value">
+                        </el-option>
+                    </el-select>
+                </el-col>
+                <el-col :xs="8" :sm="4" :md="4" :lg="2" :xl="2">노출기간</el-col>
+                <el-col :xs="4" :sm="8" :md="8" :lg="10" :xl="10" class="table">
+                    <el-date-picker placeholder="" v-model="input1" type="datetime"></el-date-picker>
+                    <el-date-picker placeholder="" v-model="input2" type="datetime"></el-date-picker>
+                </el-col>
+            </el-row>
+        </div>
+        <!-- temp-cont : End -->
+        <!-- temp-cont : Start -->
+        <div class="temp-cont">
+            <h3>전시일정</h3>
+        </div>
+        <!-- temp-cont : End -->
+    </div>
+</template>
+<!-- **************** 위에 template 만 수정 : End **************** -->
+<!-- **************** 위에 template 만 수정 : End **************** -->
+<!-- **************** 위에 template 만 수정 : End **************** -->
+<!-- ********************** Template : End ********************** -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script src="/js/element-ui.js"></script>
+<script src="/js/page-template.js"></script>
+</html>

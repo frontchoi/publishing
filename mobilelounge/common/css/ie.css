@@ -1,0 +1,5 @@
+@charset "euc-kr";
+div#section div.category_newarriral_visual div.category_newarriral_tab ul.newarriral_tab_maker > li.newarriral_tab_maker_on{
+	background-color:#fff; 
+	background-position:center 16px;
+}

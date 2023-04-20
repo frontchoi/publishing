@@ -1,0 +1,259 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+    background: #f0f1ec;
+    font-family: "Nanum Gothic", "apple Gothic", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    background-color: #05294c;
+}
+
+@media all and (min-width: 769px) {
+    .inner {
+        position: relative;
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .head_event {
+        position: relative;
+    }
+    .head_event .link_tit {
+        position: absolute;
+        top: 55px;
+        left: 50%;
+        margin-left: -180px;
+    }
+    .cont_event {
+        overflow: hidden;
+    }
+    .cont_event1 {
+        display: block;
+        float: left;
+        width: 100%;
+        background: url(/assets/event/20170118/images/img_top.png) no-repeat top center
+    }
+    .cont_event1 .link_site {
+        display: block;
+        width: 520px;
+        margin: 1155px auto 0 auto;
+        text-align: center;
+    }
+    .view_event {
+        text-align: center;
+    }
+    .cont_event1 .view_event {
+        margin: 150px 0 0 13px;
+    }
+    .cont_event2 .view_event {
+        position: relative;
+        margin: 80px 0 0 13px;
+    }
+    /*.cont_event2 .view_event:first-child {
+        margin: 0 0 0 13px;
+    }*/
+    .view_event .ico_coming {
+        position: absolute;
+        top: -135px;
+        right: 210px;
+        overflow: hidden;
+        width: 209px;
+        height: 132px;
+        margin: 20px 0;
+        background: url(/assets/event/20170118/images/ico_coming.png) no-repeat;
+        text-indent: -9999px;
+    }
+    .view_desc {
+        width: 1050px;
+        border-top: 3px solid #000;
+        margin: 50px auto;
+    }
+    .view_desc .tit_txt {
+        display: block;
+        width: 535px;
+        margin: 50px auto 30px auto;
+    }
+    .view_desc .cont_desc {
+        width: 343px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .img_btn {
+        display: block;
+        overflow: hidden;
+        width: 510px;
+        height: 80px;
+        margin: 20px 0;
+        background: url(/assets/event/20170118/images/btn_comm.png) no-repeat;
+        text-indent: -9999px;
+    }
+    .cont_event2 {
+        display: block;
+        float: left;
+        width: 100%;
+        min-height: 1300px;
+        background: url(/assets/event/20170118/images/img_mid.png) no-repeat top center;
+    }
+    .foot_event {
+        display: block;
+        float: left;
+        width: 100%;
+        min-height: 564px;
+        background: url(/assets/event/20170118/images/img_foot.png) no-repeat top center
+    }
+    .foot_event .link_tit {
+        display: block;
+        width: 460px;
+        min-height: 80px;
+        margin: 340px auto 0 auto;
+        background: url(/assets/event/20170118/images/btn_comm.png) no-repeat 0 0;
+        text-indent: -9999px;
+    }
+    .foot_event .link_tit:hover,
+    .foot_event .link_tit:focus {
+        background-position: -460px 0;
+    }
+    .area_event_mo {
+        display: none;
+    }
+    .area_event {
+        display: block;
+        min-width: 1110px;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+    .layer_close {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9990;
+    }
+    .inner {
+        width: initial;
+    }
+    .area_event {
+        display: none;
+    }
+    .area_event_mo {
+        display: block;
+        overflow: hidden;
+    }
+    .area_event_mo img {
+        width: 100%;
+    }
+    .wrap_tit {}
+    .head_event {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 0 0 72% 0;
+        background: url(/assets/event/20170118/images/mobile/bg_top.png) no-repeat top center;
+        background-size: 100% auto;
+    }
+    .head_event .link_tit {
+        display: block;
+        width: 70%;
+        margin: 47% auto 0 auto;
+    }
+    .head_event .link_tit img {
+        width: 100%;
+    }
+    .bg_top {
+        width: 100%;
+    }
+    .bg_event1 {
+        width: 100%;
+    }
+    .cont_event {
+        float: left;
+        width: 100%;
+    }
+    .cont_event1 {
+        position: relative;
+        float: left;
+        width: 100%;
+        background-color: #05294c;
+        background: url(/assets/event/20170118/images/mobile/bg_event1.png) no-repeat top center;
+        background-size: 100% auto;
+    }
+    .cont_event2 {
+        position: relative;
+        float: left;
+        width: 100%;
+        background-color: #05294c;
+        background: url(/assets/event/20170118/images/mobile/bg_event2.png) repeat-y top center;
+        padding: 0 3% 3% 3%;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .cont_event1 .wrap_twit {
+        width: 100%;
+        padding: 0 3.5%;
+        margin: 44% 0 11% 0;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .cont_event1 .link_site {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 0;
+    }
+    .cont_event1 .wrap_desc {
+        padding: 12% 3.5% 0 3.5%;
+    }
+    .cont_event1 .view_event {}
+    .cont_event1 .view_desc {
+        border-top: 3px solid #000;
+        margin: 7% 0 12% 0;
+    }
+    .cont_event1 .view_desc h3 {
+        display: block;
+        width: 80%;
+        margin: 7% auto 0 auto;
+    }
+    .cont_event1 .cont_desc {
+        margin: 4%;
+    }
+    .cont_event2 .view_event {
+        position: relative;
+        margin: 8% 0 7% 0;
+    }
+    .cont_event2 .view_event:last-child {
+        margin: 0 0 7% 0;
+        padding: 11% 0 0 0;
+        border-top: 3px solid #000;
+    }
+    .cont_event2 .view_event:last-child img {
+        margin: -4% 0 0 0;
+    }
+    .foot_event {
+        position: relative;
+        float: left;
+        width: 100%;
+        background-color: #05294c;
+        background: url(/assets/event/20170118/images/mobile/img_foot.png) no-repeat;
+        background-size: 100% auto;
+        padding: 12% 3.5% 0 3.5%;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .foot_event .link_tit {
+        display: block;
+        margin: 65% auto 30% auto;
+    }
+    .twitter-tweet {
+        margin: 0 auto !important;
+    }
+}

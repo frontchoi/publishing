@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+input,
+select,
+textarea,
+button {
+    vertical-align: middle
+}
+
+input::-ms-clear {
+    display: none
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer
+}
+
+body {
+    background: #fff;
+    font-family: 'Noto Sans KR';
+}
+
+body,
+th,
+td,
+select,
+button,
+textarea {
+    font-size: 14px;
+    line-height: 1.5;
+    /*color: #2c0707*/
+}
+
+input[placeholder] {
+    color: #b7b1b1;
+}
+
+input[type="text"],
+input[type="password"] {
+    /*color: #2c0707;*/
+}
+
+a {
+    /*color: #2c0707;*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active,
+a:hover {
+    text-decoration: none
+}
+
+a:active {
+    background-color: transparent
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+.hidden {
+    display: none !important;
+}
+table{
+    border-spacing:0;
+}
+th,td {
+    padding:0;
+}

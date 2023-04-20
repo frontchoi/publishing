@@ -1,0 +1,1499 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>모바일 라운지 회원가입</title>
+<link rel="shortcut icon" href="/ex/images/ico/mobilelounge.ico"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/font.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/style_back.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/global.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/slide_aside.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/slide_eventsale.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/common/js/common.js" type="text/javascript"></script>
+<script src="/common/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/common/js/commonUIComponent.js"></script>
+<script src="/common/js/bjqs-1.3.min.js"></script>
+<script src="/common/js/jquery.glide.min.js"></script>
+<script src="/common/js/popup.js"></script>
+<script type="text/javascript" src="/common/js/smooth-scroll.js"></script>
+</head>
+<body>
+	<!-- top_menu -->
+	<div id="top_menu">
+		<div id="header">
+			<a href="/ex/html/index.html"  class="header_logo"><img src="/images/btn/btn_logo01_off.gif" alt="Mobilelounge" /></a>
+			<a href="#" class="header_bookmark"><img src="/images/btn/btn_bookmark01_off.gif" alt="Mobilelounge_Bookmark" /></a>
+			<ul class="header_menu header_menu_txt">
+				<li><a href="/ex/html/member/login.html">로그인</a></li>
+				<li><a href="/ex/html/member/sign_up_individual.html">회원가입</a></li>
+				<li><a href="/ex/html/cart/cart_step01.html">장바구니</a></li>
+				<li><a href="/ex/html/mypage/mypage_shoping_admin.html">마이페이지</a></li>
+				<li><a href="/ex/html/mypage/mypage_delivery_find.html">주문/배송</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_faq.html">고객센터</a></li>
+			</ul>
+			<ul class="header_menu header_menu_img hidden">
+				<li>
+					<a href="/ex/html/member/login.html"><img src="/images/btn/btn_lock01_off.gif" alt="로그인" /></a>
+					<p class="header_menu_login">로그인</p>
+				</li>
+				<li>
+					<a href="/ex/html/member/sign_up_individual.html"><img src="/images/btn/btn_people01_off.gif" alt="회원가입" /></a>
+					<p class="header_menu_member_join">회원가입</p>
+				</li>
+				<li>
+					<a href="/ex/html/cart/cart_step01.html"><img src="/images/btn/btn_cart01_off.gif" alt="장바구니" /></a>
+					<p class="header_menu_cart">장바구니</p>
+				</li>
+				<li>
+					<a href="/ex/html/mypage/mypage_shoping_admin.html"><img src="/images/btn/btn_mymenu01_off.gif" alt="마이페이지" /></a>
+					<p class="header_menu_mypage">마이페이지</p>
+				</li>
+				<li>
+					<a href="/ex/html/mypage/mypage_delivery_find.html"><img src="/images/btn/btn_car01_off.gif" alt="주문/배송" /></a>
+					<p class="header_menu_order">주문&#47;배송</p>
+				</li>
+				<li>
+					<a href="/ex/html/cscenter/cscenter_faq.html"><img src="/images/btn/btn_phone01_off.gif" alt="고객센터" /></a>
+					<p class="header_menu_cscenter">고객센터</p>
+				</li>
+			</ul>
+			<h1><a href="/ex/html/index.html"><img src="/images/main/img_main_logo.gif" alt="Mobilelounge accessories" /></a></h1>
+		</div>
+		<div id="nav" class="nav_top_bg">
+			<h2 class="hidden">모바일라운지 상품별 메뉴</h2>
+			<div>
+				<div class="nav_over_left"></div>
+				<div class="nav_over_right"></div>
+				<!-- ul.gnb -->
+				<ul class="gnb">
+					<li><a href="/ex/html/category01/category01_case.html" class="gnb_case">CASE</a></li>
+					<li><a href="/ex/html/category01/category01_film.html" class="gnb_film">FILM</a></li>
+					<li><a href="/ex/html/category01/category01_mobile_acc.html" class="gnb_acc">MOBILE-ACC</a></li>
+					<li><a href="/ex/html/category01/category01_audio.html" class="gnb_audio">AUDIO</a></li>
+					<li><a href="/ex/html/category01/category01_fashion.html" class="gnb_fashion">FASHION</a></li>
+					<li><a href="/ex/html/category01/category01_brand.html" class="gnb_brand">BRAND</a></li>
+					<li class="new"><a href="/ex/html/category01/category01_new.html">New</a></li>
+					<li><a href="/ex/html/category01/category01_best.html">Best</a></li>
+					<li class="oneday"><a href="/ex/html/category01/category01_oneday.html">Oneday</a></li>
+				</ul>
+				<fieldset class="global_search_group">
+					<legend>상품 검색</legend>
+					<input type="text" name="" id="global_search" class="global_search" value="Search here" maxlength="15" size="20" /> 
+					<button class="btn_product_search"></button>
+				</fieldset>
+				<!-- // ul.gnb -->
+			</div>
+			<!-- ul.gnb_case -->
+			<ul class="gnb_open gnb_open_case">
+				<li>
+					<!-- 삼성 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_samsung01_note3.html">삼성 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_samsung01_note3.html">갤럭시노트3</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung02_s4.html">갤럭시S4 </a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung03_s3.html">갤럭시S3 </a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung04_note2.html">갤럭시노트2</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung05_note.html">갤럭시노트</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung06_etc.html">기타 갤럭시 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_apple.html">애플 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_apple01_phone5s.html">아이폰 5&#47;5s</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple02_phone5c.html">아이폰 5C</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple03_phone4s.html">아이폰 4&#47;4S</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple04_pad.html">아이패드</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple05_etc.html">기타 아이폰 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>				
+					<!-- 스카이 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_lg.html">엘지 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_lg01_opview.html">옵티머스 뷰</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_lg02_opg2.html">옵티머스 G2</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_lg03_opgpro.html">옵티머스 G프로</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_lg04_etc.html">기타 옵티머스 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 스카이 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_sky.html">스카이 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_sky01_vegar3.html">베가R3</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky02_vegars5.html">베가S5</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky03_vegarsracer.html">베가레이서</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky04_vegasecretnote.html">베가시크릿노트</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky05_etc.html">기타 베가 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="gnb_open_half">
+						<!-- 그외 케이스 -->
+						<dt><a href="/ex/html/category02/case/category02_case_etc.html">그외 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_etc01_old.html">구기종 케이스 모음</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_etc02_character.html">캐릭터 케이스 모음</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+						<!-- 인기 브랜드 -->
+						<dt><a href="#">인기 브랜드</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">모바일라운지</a></li>
+								<li><a href="#">머큐리</a></li>
+								<li><a href="#">세븐밀리</a></li>
+								<li><a href="#">라미엔느</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+					</dl>
+					<!-- 아이템 -->
+					<dl class="gnb_red_bullet bg_img_none">
+						<dt><a href="#">아이템</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">가죽케이스</a></li>
+								<li><a href="#">다이어리케이스</a></li>
+								<li><a href="#">플립케이스</a></li>
+								<li><a href="#">실리콘케이스</a></li>
+								<li><a href="#">하드케이스</a></li>
+								<li><a href="#">범퍼케이스</a></li>
+								<li><a href="#">소프트케이스</a></li>
+								<li><a href="#">젤리케이스</a></li>
+								<li><a href="#">백커버</a></li>
+								<li><a href="#">기타케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<!-- // ul.gnb_case -->
+			<!-- ul.gnb_film -->
+			<ul class="gnb_open gnb_open_film">
+				<li>
+					<!-- 삼성 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_samsung01_note3.html">삼성 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_samsung01_note3.html">갤럭시노트3</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung02_s4.html">갤럭시S4</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung03_s3.html">갤럭시S3</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung04_note2.html">갤럭시노트2</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung06_etc.html">기타 갤럭시 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_apple01_phone5s.html">애플 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_apple01_phone5s.html">아이폰 5&#47;5s</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple02_phone5c.html">아이폰 5C</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple03_phone4s.html">아이폰 4&#47;4S</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple04_pad.html">아이패드</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple05_etc.html">기타 아이폰 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_lg01_opview.html">엘지 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_lg01_opview.html">옵티머스 뷰</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_lg02_opg2.html">옵티머스 G2</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_lg03_opgpro.html">옵티머스 G프로</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_lg04_etc.html">기타 옵티머스 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 스카이 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_sky01_vegar3.html">스카이 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_sky01_vegar3.html">베가R3</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky02_vegars5.html">베가S5</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky03_vegarsracer.html">베가레이서</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky04_vegasecretnote.html">베가시크릿노트</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky05_etc.html">기타 베가 필릌</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="gnb_open_half">
+						<!-- 기타 필름 -->
+						<dt><a href="#">기타 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">타블렛 필름</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+						<!-- 인기 브랜드 -->
+						<dt><a href="#">인기 브랜드</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">모바일라운지</a></li>
+								<li><a href="#">엠파이브</a></li>
+								<li><a href="#">텔루스</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+					</dl>
+					<!-- 필름/스킨 -->
+					<dl class="gnb_red_bullet">
+						<dt><a href="#">필름&#47;스킨</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">일반 액정보호 필름</a></li>
+								<li><a href="#">고투명 필름</a></li>
+								<li><a href="#">지문방지 필름</a></li>
+								<li><a href="#">방탄 필름</a></li>
+								<li><a href="#">미러스킨</a></li>
+								<li><a href="#">알루미늄스킨</a></li>
+								<li><a href="#">기타 액정보호 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<!-- // ul.gnb_film -->
+			<!-- ul.gnb_acc -->
+			<ul class="gnb_open gnb_open_acc">
+				<li>
+					<!-- 충전기/젠더 -->
+					<dl>
+						<dt><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender01_car.html">충전기&#47;젠더</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender01_car.html">차량용 충전기</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender02_home.html">가정용 충전기</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender03_cable.html">데이터 케이블</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender04_gender.html">충전젠더</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender05_battery.html">보조배터리</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 필름 -->
+					<dl>
+						<dt>기타 액세서리</dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc01_pen.html">터치펜</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc02_plug.html">이어마개</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc03_etc.html">기타</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="gnb_open_half">
+						<!-- 기타 필름 -->
+						<dt>기타 필름</dt>
+						<dd>
+							<ul>
+								<li><a href="#">타블렛 필름</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+						<!-- 인기 브랜드 -->
+						<dt>인기 브랜드</dt>
+						<dd>
+							<ul>
+								<li><a href="#">헬로키티</a></li>
+								<li><a href="#">솔로젠</a></li>
+								<li><a href="#">머큐리</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+					</dl>
+					<!-- 모바일 주변기기 -->
+					<dl class="gnb_red_bullet">
+						<dt>모바일 주변기기</dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender01_car.html">충전기&#47;젠더</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_mountsmemory01_car.html">거치대&#47;메모리</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc01_pen.html">기타 액세서리</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<!-- // ul.gnb_acc -->
+			<!-- ul.gnb_audio -->
+			<ul class="gnb_open gnb_open_audio">
+				<li>
+					<!-- 음향기기 -->
+					<dl class="gnb_red_bullet">
+						<dt>음향기기</dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/audio/category02_audio_bluetooth.html">블루투스</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_earphone.html">이어폰</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_headphone.html">헤드폰</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_speaker.html">스피커</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_otheraudio.html">기타 음향기기</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 음향기기 배너 -->
+					<ul class="gnb_open_img">
+						<li><a href="#"><img src="/images/common/img_gnb_audio01.jpg" alt="CX310" /></a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- // ul.gnb_audio -->
+		</div>
+	</div>
+	<!-- // top_menu -->
+	<!-- contents -->
+	<div id="contents">
+		<h2 class="hidden">모바일라운지 컨텐츠</h2>
+		<div id="aside">
+			<h3 class="hidden">우측 메뉴</h3>
+			<ul class="aside_menu">
+				<li class="event_aside_menu no_opacity"><img src="/images/btn/btn_right_event01_off.gif" alt="이벤트" /></li>
+				<li><a href="/ex/html/member/login.html"><img src="/images/btn/btn_lock02.gif" alt="로그인" /></a></li>
+				<li><a href="/ex/html/member/sign_up_individual.html"><img src="/images/btn/btn_people02.gif" alt="회원가입" /></a></li>
+				<li><a href="/ex/html/cart/cart_step01.html"><img src="/images/btn/btn_cart02.gif" alt="장바구니" /></a></li>
+				<li><a href="/ex/html/mypage/mypage_shoping_admin.html"><img src="/images/btn/btn_mymenu02.gif" alt="마이페이지" /></a></li>
+				<li><a href="/ex/html/cart/cart_step03.html"><img src="/images/btn/btn_car02.gif" alt="주문/배송" /></a></li>
+				<li><a href="/ex/html/cscenter/cscenter_faq.html"><img src="/images/btn/btn_phone02.gif" alt="고객센터" /></a></li>
+				<li class="last_aside_menu no_opacity"><a href="#"><img src="/images/btn/btn_balloon01_off.gif" alt="메신저" /></a></li>
+				<li class="look_product_txt no_opacity">최근<br />본상품</li>
+				<li class="look_product_img no_opacity"><a href="#"></a></li>
+				<li class="look_product_img no_opacity"><a href="#"></a></li>
+				<li class="look_product_page"><button class="look_product_prev"></button>56&#47;56<button class="look_product_next"></button></li>
+			</ul>
+			<div class="event_aside">
+				<h4>이벤트</h4>
+				<button class="aside_event_close_btn01"></button>
+				<div id="banner-fade">
+					<ul class="bjqs">
+					<li><a href="#"><img src="/images/common/img_hotfocus01.jpg" title="이벤트"></a></li>
+					<li><a href="/ex/html/mpoint/mpoint_gift.html"><img src="/images/common/img_hotfocus02.jpg" title="이벤트"></a></li>
+					<li><a href="/ex/html/mpoint/mpoint_victory.html"><img src="/images/common/img_hotfocus03.jpg" title="이벤트"></a></li>
+					</ul>
+				</div>
+				<div class="aside_event_benner"><a href="#"><img src="/images/common/notice.jpg" alt="3만원 이상! 무료배송 EVENT" /></a></div>
+				<p class="today_close_txt"><button class="aside_event_close_btn02"></button>오늘은 그만보기</p>
+			</div>
+		</div>
+		<!-- section -->
+		<div id="section">
+			<!-- category_header -->
+			<div class="category_header">
+				<ul class="category_header_path_group">
+					<li><a href="#" class="select_home_btn">HOME</a></li>
+					<li><a href="#">회원가입</a></li>
+					<li><a href="#">이용약관</a></li>
+				</ul>
+				<a href="#" class="prev_page_go">이전 페이지가기</a>
+			</div>
+			<!-- // category_header -->
+			<div class="sign_up">
+				<h3><span class="h3_txt_eng">MEMBERS</span><span class="h3_txt_han">회원가입</span></h3>
+				<!-- 회원가입 방식 선택 테이블 -->
+				<table class="table_join_group">
+					<caption class="hidden">회원가입 방식 선택</caption>
+					<tr>
+						<th>회원구분</th>
+						<td>
+							<input type="radio" name="sign_up_select_individual1" checked="checked" id="sign_up_select_individual1" class="sign_up_select_individual"><label for="sign_up_select_individual1">개인회원</label>
+							<input type="radio" name="sign_up_select_individual1" id="sign_up_select_business1" class="sign_up_select_business mgl10"><label for="sign_up_select_business1">사업자</label>
+							<input type="radio" name="sign_up_select_individual1" id="sign_up_select_foreigner1" class="sign_up_select_foreigner mgl10"><label for="sign_up_select_foreigner1">외국인&nbsp;&#40;foreigner&#41;</label>
+						</td>
+					</tr>
+					<tr class="sign_up_select_business hidden">
+						<th><label for="sign_up_select_business">사업자구분</label></th>
+						<td>
+							<input type="radio" name="sign_up_select_individual2_2" checked="checked" id="sign_up_select_individual2_2"><label for="sign_up_select_individual2_2">개인사업자</label>
+							<input type="radio" name="sign_up_select_individual2_2" class="mgl10" id="sign_up_select_business2_2"><label for="sign_up_select_business2_2">법인사업자</label>
+						</td>
+					</tr>
+					<!-- 2014-05-23 삭제
+					<tr class="sign_up_select_foreigner hidden">
+						<th><label for="sign_up_select_foreigner">회원인증</label></th>
+						<td>
+							이름<input type="text" name="" class="width120 mgl10" id="sign_up_select_foreigner"><br /><br />
+							<input type="radio" name="1" checked="checked" id="sign_up_select_foreigner_number"><label for="sign_up_select_foreigner_number">외국인등록번호</label>
+							<input type="radio" name="1" class="mgl10" id="sign_up_select_passport_number"><label for="sign_up_select_passport_number">여권번호</label>
+							<input type="radio" name="1" class="mgl10" id="sign_up_select_license_number1"><label for="sign_up_select_license_number1">국제운전면허증번호</label>
+							<input type="text" name="" class="width120 mgl20"><button class="white_btn">중복확인</button><br /><br />
+							회사는 회원의 본인 확인 및 서비스제공을 위하여 고유식별정보를 수집하여 보관하며 개인정보취급방침에 따라
+							보유 및 이용합니다&#46; 고유식별정보 제공을 거부하는 경우 서비스 이용이 제한됩니다&#46;<br /><br />
+							<input type="checkbox" name="" id="unique_identification_consent"><label for="unique_identification_consent">고유식별정보 처리에 동의 합니다&#46;</label>
+						</td>
+					</tr>-->
+				</table>
+				<!-- // 회원가입 방식 선택 테이블 -->
+				<!-- -------------------------------------------------------------------------------------------- -->
+				<!-- 개인사업자 테이블 그룹 -->
+				<div class="table_individual_group">
+					<!-- 기본정보 테이블 -->
+					<table>
+						<caption><span class="caption_tit">기본정보</span><span class="caption_txt">회원가입을 위한 필수입력 항목을 입력해 주세요&#46;</span></caption>
+						<tr>
+							<th><label for="sign_up_input_id">아이디</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_id"><button class="white_btn" onClick="id_check_popup()">아이디중복확인</button>
+								<span class="txt_gray">&#40;영문소문자&#47;숫자&#44;4&#126;16자&#41;</span>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw">비밀번호</label></th>
+							<td>
+								<input type="password" name="" class="width120" id="sign_up_input_pw">
+								<span class="txt_gray">&#40;영문 대소문자&#44;숫자&#44;또는 특수문자 중 2가지 이상 조합하여 10&#126;16자로 입력해 주세요&#46;</span>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_confirm">비밀번호 확인</label></th>
+							<td>
+								<input type="password" name="" class="width120" id="sign_up_input_pw_confirm">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_quiz">비밀번호 확인 질문</label></th>
+							<td>
+								<select name="" class="width270" id="sign_up_input_pw_quiz">
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_answer">비밀번호 확인 답변</label></th>
+							<td>
+								<input type="text" name="" class="width500" id="sign_up_input_pw_answer">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_name">이름</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_name">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_addr">주소</label></th>
+							<td>
+								<input type="text" name="" class="width45" readonly="readonly">&nbsp;-&nbsp;<input type="text" name="" class="width45"><button class="white_btn" id="sign_up_input_addr" onClick="addr_search_popup()">우편번호</button>
+								<input type="text" name="" class="width500 mgt5">
+								<input type="text" name="" class="width500 mgt5">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_phone">유선전화</label></th>
+							<td>
+								<select name="" class="width60" id="sign_up_input_phone">
+									<option>02</option>
+									<option>010</option>
+									<option>011</option>
+								</select>
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_hphone">휴대전화</label></th>
+							<td>
+								<select name="" class="width60" id="sign_up_input_hphone">
+									<option>02</option>
+									<option>010</option>
+									<option>011</option>
+								</select>
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_email">이메일</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_email">&nbsp;&#64;&nbsp;<input type="text" name="" class="width120">
+								<select name="" class="width150">
+									<option>naver.com</option>
+									<option>naver.com</option>
+									<option>naver.com</option>
+									<option>naver.com</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_newsmail">뉴스메일</label></th>
+							<td>뉴스 메일을 받으시곘습니까?<input type="radio" name="sign_up_input_newsmail_ok3" checked="checked" class="mgl10" id="sign_up_input_newsmail_ok3"><label for="sign_up_input_newsmail_ok3">수신함</label><input type="radio" name="sign_up_input_newsmail_no3" class="mgl10" id="sign_up_input_newsmail_no3"><label for="sign_up_input_newsmail_no3">수신안함</label></td>
+						</tr>
+					</table>
+					<!-- // 기본정보 테이블 -->
+					<!-- 가입경로 테이블 -->
+					<table>
+						<caption><span class="caption_tit">가입경로</span></caption>
+						<tr>
+							<th>가입경로</th>
+							<td>
+								<input type="radio" name="sign_up_select_join_path1" checked="checked" id="sign_up_select_join_path1_1"><label for="sign_up_select_join_path1_1">고객서비스</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_2"><label for="sign_up_select_join_path1_2">구매처</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_3"><label for="sign_up_select_join_path1_3">다이렉트 마케팅</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_4"><label for="sign_up_select_join_path1_4">이벤트&#47;로드쇼</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_5"><label for="sign_up_select_join_path1_5">추천 &#40;회원&#47;직원&#41;</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_7"><label for="sign_up_select_join_path1_7">세일즈팀</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_8"><label for="sign_up_select_join_path1_8">TV 및 인쇄 광고</label>
+								<input type="radio" name="sign_up_select_join_path1" class="mgl10" id="sign_up_select_join_path1_9"><label for="sign_up_select_join_path1_9">인터넷 광고</label>
+							</td>
+						</tr>
+						<!-- 2014-06-03 추가 및 수정 -->
+						<tr>
+							<th><label for="sign_up_giftcard">기프트 카드 일련번호</label></th>
+							<td>
+								<input type="text" name="" class="width150" id="sign_up_giftcard">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_recommend">추천인 ID</label></th>
+							<td>
+								<input type="text" name="" class="width150" id="sign_up_recommend">
+							</td>
+						</tr>
+						<!-- // 2014-06-03 추가 및 수정 -->
+					</table>
+					<!-- // 가입경로 테이블 -->
+					<!-- 모바일정보 테이블 -->
+					<table>
+						<caption><span class="caption_tit">모바일정보</span></caption>
+						<tr>
+							<th><label for="mobileinfo_myphone">마이폰 정보</label></th>
+							<td>
+								<select name="" class="width150 mgr10" id="mobileinfo_myphone">
+									<option>통신사</option>
+									<option>통신사</option>
+									<option>통신사</option>
+								</select>
+								<select name="" class="width150 mgr10">
+									<option>제조사</option>
+									<option>제조사</option>
+									<option>제조사</option>
+								</select>
+								<select name="" class="width150">
+									<option>기종</option>
+									<option>기종</option>
+									<option>기종</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="mobileinfo_familyphone">우리가족 폰정보</label></th>
+							<td>
+								<select name="" class="width150 mgr10" id="mobileinfo_familyphone">
+									<option>통신사</option>
+									<option>통신사</option>
+									<option>통신사</option>
+								</select>
+								<select name="" class="width150 mgr10">
+									<option>제조사</option>
+									<option>제조사</option>
+									<option>제조사</option>
+								</select>
+								<select name="" class="width150">
+									<option>기종</option>
+									<option>기종</option>
+									<option>기종</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					<!-- // 모바일정보 테이블 -->
+				</div>
+				<!-- // 개인사업자 테이블 그룹 -->
+				<!-- -------------------------------------------------------------------------------------------- -->
+				<!-- 사업자 테이블 그룹 -->
+				<div class="table_business_group hidden">
+					<!-- 기본정보 테이블 -->
+					<table>
+						<caption><span class="caption_tit">기본정보</span><span class="caption_txt">회원가입을 위한 필수입력 항목을 입력해 주세요.</span></caption>
+						<tr>
+							<th><label for="sign_up_input_id">아이디</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_id"><button class="white_btn" onClick="id_check_popup()">아이디중복확인</button>
+								<span class="txt_gray">&#40;영문소문자&#47;숫자&#44;4&#126;16자&#41;</span>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw">비밀번호</label></th>
+							<td>
+								<input type="password" name="" class="width120" id="sign_up_input_pw">
+								<span class="txt_gray">&#40;영문 대소문자&#44;숫자&#44;또는 특수문자 중 2가지 이상 조합하여 10&#126;16자로 입력해 주세요&#46;</span>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_confirm">비밀번호 확인</label></th>
+							<td>
+								<input type="password" name="" class="width120" id="sign_up_input_pw_confirm">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_quiz">비밀번호 확인 질문</label></th>
+							<td>
+								<select name="" class="width270" id="sign_up_input_pw_quiz">
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+									<option>기억에 남는 추억의 장소는?</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_answer">비밀번호 확인 답변</label></th>
+							<td>
+								<input type="text" name="" class="width500" id="sign_up_input_pw_answer">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_name">이름</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_name">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_addr">주소</label></th>
+							<td>
+								<input type="text" name="" class="width45">&nbsp;-&nbsp;<input type="text" name="" class="width45"><button class="white_btn" id="sign_up_input_addr" onClick="addr_search_popup()">우편번호</button>
+								<input type="text" name="" class="width500 mgt5">
+								<input type="text" name="" class="width500 mgt5">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_phone">유선전화</label></th>
+							<td>
+								<select name="" class="width60" id="sign_up_input_phone">
+									<option>02</option>
+									<option>010</option>
+									<option>011</option>
+								</select>
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_hphone">휴대전화</label></th>
+							<td>
+								<select name="" class="width60" id="sign_up_input_hphone">
+									<option>02</option>
+									<option>010</option>
+									<option>011</option>
+								</select>
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+								&nbsp;-&nbsp;
+								<input type="text" name="" class="width60">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_email">이메일</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_email">&nbsp;&#64;&nbsp;<input type="text" name="" class="width120">
+								<select name="" class="width150">
+									<option>naver.com</option>
+									<option>naver.com</option>
+									<option>naver.com</option>
+									<option>naver.com</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_newsmail">뉴스메일</label></th>
+							<td>뉴스 메일을 받으시겠습니까?<input type="radio" name="sign_up_input_newsmail_ok1" checked="checked" class="mgl10" id="sign_up_input_newsmail_ok1"><label for="sign_up_input_newsmail_ok1">수신함</label><input type="radio" name="sign_up_input_newsmail_no1" class="mgl10" id="sign_up_input_newsmail_no1"><label for="sign_up_input_newsmail_no1">수신안함</label></td>
+						</tr>
+					</table>
+					<!-- // 기본정보 테이블 -->
+					<!-- 가입경로 테이블 -->
+					<table>
+						<caption><span class="caption_tit">가입경로</span></caption>
+						<tr>
+							<th>가입경로</th>
+							<td>
+								<input type="radio" name="sign_up_select_join_path2" checked="checked" id="sign_up_select_join_path2_1"><label for="sign_up_select_join_path2_1">고객서비스</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_2"><label for="sign_up_select_join_path2_2">구매처</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_3"><label for="sign_up_select_join_path2_3">다이렉트 마케팅</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_4"><label for="sign_up_select_join_path2_4">이벤트&#47;로드쇼</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_5"><label for="sign_up_select_join_path2_5">추천 &#40;회원&#47;직원&#41;</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_7"><label for="sign_up_select_join_path2_7">세일즈팀</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_8"><label for="sign_up_select_join_path2_8">TV 및 인쇄 광고</label>
+								<input type="radio" name="sign_up_select_join_path2" class="mgl10" id="sign_up_select_join_path2_9"><label for="sign_up_select_join_path2_9">인터넷 광고</label>
+							</td>
+						</tr>
+						<!-- 2014-06-03 추가 및 수정 -->
+						<tr>
+							<th><label for="sign_up_giftcard">기프트 카드 일련번호</label></th>
+							<td>
+								<input type="text" name="" class="width150" id="sign_up_giftcard">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_recommend">추천인 ID</label></th>
+							<td>
+								<input type="text" name="" class="width150" id="sign_up_recommend">
+							</td>
+						</tr>
+						<!-- // 2014-06-03 추가 및 수정 -->
+					</table>
+					<!-- // 가입경로 테이블 -->
+					<!-- 사업자등록정보 테이블 -->
+					<table>
+						<caption><span class="caption_tit">사업자등록정보</span><span class="caption_txt">세금계산서 발행을 원하는 사업자는&#44; 반드시 사업자등록증과 일치하게 가입하셔야 합니다&#46;</span></caption>
+						<tr>
+							<th><label for="sign_up_business_number">사업자등록번호</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_business_number">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_ceo_name">성명 &#60;대표자&#62;</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_ceo_name">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_corporation_name">상호 &#60;법인명&#62;</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_corporation_name">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_business_addr">주소</label></th>
+							<td>
+								<input type="text" name="" class="width45">&nbsp;-&nbsp;<input type="text" name="" class="width45"><button class="white_btn" id="sign_up_input_business_addr" onClick="addr_search_popup()">우편번호</button>
+								<input type="text" name="" class="width500 mgt5">
+								<input type="text" name="" class="width500 mgt5">
+							</td>
+						</tr>
+					</table>
+					<p class="must_txt"><span>필독&#33;</span>회원가입후 아이디가 기재된 사업자 등록증을 팩스로 보내주셔야 회원가입이 승인됩니다. &#40;FAX&nbsp;02-&#08;3494-&#08;4898&#41;</p>
+					<!-- // 사업자등록정보 테이블 -->
+					<!-- 모바일정보 테이블 -->
+					<table>
+						<caption><span class="caption_tit">모바일정보</span></caption>
+						<tr>
+							<th><label for="mobileinfo_myphone">마이폰 정보</label></th>
+							<td>
+								<select name="" class="width150 mgr10" id="mobileinfo_myphone">
+									<option>통신사</option>
+									<option>통신사</option>
+									<option>통신사</option>
+								</select>
+								<select name="" class="width150 mgr10">
+									<option>제조사</option>
+									<option>제조사</option>
+									<option>제조사</option>
+								</select>
+								<select name="" class="width150">
+									<option>기종</option>
+									<option>기종</option>
+									<option>기종</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="mobileinfo_familyphone">우리가족 폰정보</label></th>
+							<td>
+								<select name="" class="width150 mgr10" id="mobileinfo_familyphone">
+									<option>통신사</option>
+									<option>통신사</option>
+									<option>통신사</option>
+								</select>
+								<select name="" class="width150 mgr10">
+									<option>제조사</option>
+									<option>제조사</option>
+									<option>제조사</option>
+								</select>
+								<select name="" class="width150">
+									<option>기종</option>
+									<option>기종</option>
+									<option>기종</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					<!-- // 모바일정보 테이블 -->
+				</div>
+				<!-- // 사업자 테이블 그룹 -->
+				<!-- -------------------------------------------------------------------------------------------- -->
+				<!-- 외국인 테이블 그룹 -->
+				<div class="table_foreigner_group hidden">
+					<!-- 기본정보 테이블 -->
+					<table>
+						<caption><span class="caption_tit">기본정보</span><span class="caption_txt">회원가입을 위한 필수입력 항목을 입력해 주세요.</span></caption>
+						<tr>
+							<th><label for="sign_up_input_id3">ID</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_id3"><button class="white_btn" onClick="id_check_eng_popup()">ID CHECK</button>
+								<span class="txt_gray">&#40;Letters and numbers only; no blank ID&Password 4~16 characters each&#41;</span>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw3">Password</label></th>
+							<td>
+								<input type="password" name="" class="width120" id="sign_up_input_pw3">
+								<span class="txt_gray">&#40;Combination of 10~16 (upper/lowercase)letters, numbers, and symbols without space.&#46;</span>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_pw_confirm3">Re-enter Password</label></th>
+							<td>
+								<input type="password" name="" class="width120" id="sign_up_input_pw_confirm3">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_first_name">First name</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_first_name">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_last_name">Last name</label></th>
+							<td>
+								<input type="text" name="" class="width140" id="sign_up_input_last_name">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_street_addr">Street address</label></th>
+							<td>
+								<input type="text" name="" class="width500" id="sign_up_input_street_addr">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_city">City</label></th>
+							<td>
+								<input type="text" name="" class="width300" id="sign_up_input_city">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_state_province">State&#47;Province</label></th>
+							<td>
+								<input type="text" name="" class="width300" id="sign_up_input_state_province">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_country">Country</label></th>
+							<td>
+								<select name="" class="width270" id="sign_up_input_country">
+									<option>United States(+1)</option>
+									<option>United States(+1)</option>
+									<option>United States(+1)</option>
+									<option>United States(+1)</option>
+									<option>United States(+1)</option>
+									<option>United States(+1)</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_zip_code">Zip Code</label></th>
+							<td>
+								<input type="text" name="" class="width80" id="sign_up_input_zip_code">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_telephone_number">Telephone Number</label></th>
+							<td>
+								<select name="" class="width60" id="sign_up_input_telephone_number">
+									<option>+1</option>
+									<option>+1</option>
+									<option>+1</option>
+								</select>
+								<input type="text" name="" class="width140">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_mobile_phone_number">Mobile Phone Number</label></th>
+							<td>
+								<select name="" class="width60" id="sign_up_input_mobile_phone_number">
+									<option>+1</option>
+									<option>+1</option>
+									<option>+1</option>
+								</select>
+								<input type="text" name="" class="width140">
+							</td>
+						</tr>
+						<tr>
+							<th><label for="sign_up_input_foreigner_email">E-mail address</label></th>
+							<td>
+								<input type="text" name="" class="width120" id="sign_up_input_foreigner_email">&nbsp;&#64;&nbsp;<input type="text" name="" class="width120">
+								<select name="" class="width150">
+									<option>naver.com</option>
+									<option>naver.com</option>
+									<option>naver.com</option>
+									<option>naver.com</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>E-mail receipt notification</th>
+							<td>
+							<input type="radio" name="sign_up_input_newsmail_ok3" checked="checked" class="mgl10" id="sign_up_input_newsmail_ok3"><label for="sign_up_input_newsmail_ok3">Agree</label>
+							<input type="radio" name="sign_up_input_newsmail_no4" class="mgl10" id="sign_up_input_newsmail_no4"><label for="sign_up_input_newsmail_no4">Disagredd</label></td>
+						</tr>
+						<tr>
+							<th>SMS receipt notification</th>
+							<td><input type="radio" name="sign_up_input_newsmail_ok4" checked="checked" class="mgl10" id="sign_up_input_newsmail_ok4"><label for="sign_up_input_newsmail_ok4">Agree</label><input type="radio" name="sign_up_input_newsmail_no5" class="mgl10" id="sign_up_input_newsmail_no5"><label for="sign_up_input_newsmail_no5">Disagredd</label></td>
+						</tr>
+					</table>
+					<!-- // 기본정보 테이블 -->
+				</div>
+				<!-- // 외국인 테이블 그룹 -->
+				<!-- -------------------------------------------------------------------------------------------- -->
+				<!-- 내국인 이용약관 동의 -->
+				<div class="terms_textarea_group">
+					<h4>이용약관 동의</h4>
+					<div class="terms_textarea">
+						<p class="terms_textarea_contants">제1조(목적)
+   
+이 약관은 주식회사 모바일라운지 회사(전자거래 사업자)가 운영하는 모바일라운지 사이버 몰(이하 "몰"이라 한다)에서 제공하는 인터넷 관련 서비스(이하 "서비스"라 한다)를 이용함에 있어 사이버몰과 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다. 
+※ 「PC통신등을 이용하는 전자거래에 대해서도 그 성질에 반하지 않는한 이 약관을 준용합니다」 
+ 
+ 
+제2조(정의)
+   
+① "몰"이란 주식회사 모바일라운지 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터등 정보통신설비를 이용하여 재화 또는 용역을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.  
+② "이용자"란 "몰"에 접속하여 이 약관에 따라 "몰"이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.
+③ ‘회원’이라 함은 "몰"에 개인정보를 제공하여 회원등록을 한 자로서, "몰"의 정보를 지속적으로 제공받으며, "몰"이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.
+④ ‘비회원’이라 함은 회원에 가입하지 않고 "몰"이 제공하는 서비스를 이용하는 자를 말합니다.
+ 
+ 
+제3조(약관등의 명시와 설명 및 개정) 
+
+① "몰"은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호·모사전송번호·전자우편주소, 사업자등록번호, 통신판매업신고번호, 개인정보관리책임자등을 이용자가 쉽게 알 수 있도록 "몰"의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.
+② "몰"은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회·배송책임·환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.
+③ "몰"은 전자상거래등에서의소비자보호에관한법률, 약관의규제에관한법률, 전자거래기본법, 전자서명법, 정보통신망이용촉진등에관한법률, 방문판매등에관한법률, 소비자보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.
+④ "몰"이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면에 그 적용일자 7일이전부터 적용일자 전일까지 공지합니다.
+다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다.  이 경우 "몰“은 개정전 내용과 개정후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다. 
+⑤ "몰"이 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정전의 약관조항이 그대로 적용됩니다. 다만 이미 계약을 체결한 이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간내에 "몰"에 송신하여 "몰"의 동의를 받은 경우에는 개정약관 조항이 적용됩니다.
+⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자보호지침 및 관계법령 또는 상관례에 따릅니다.
+
+
+제4조(서비스의 제공 및 변경) 
+
+① "몰"은 다음과 같은 업무를 수행합니다.
+1. 재화 또는 용역에 대한 정보 제공 및 구매계약의 체결
+2. 구매계약이 체결된 재화 또는 용역의 배송
+3. 기타 "몰"이 정하는 업무
+② "몰"은 재화 또는 용역의 품절 또는 기술적 사양의 변경 등의 경우에는 장차 체결되는 계약에 의해 제공할 재화 또는 용역의 내용을 변경할 수 있습니다. 이 경우에는 변경된 재화 또는 용역의 내용 및 제공일자를 명시하여 현재의 재화 또는 용역의 내용을 게시한 곳에 즉시 공지합니다.
+③ "몰"이 제공하기로 이용자와 계약을 체결한 서비스의 내용을 재화등의 품절 또는 기술적 사양의 변경 등의 사유로 변경할 경우에는 그 사유를 이용자에게 통지 가능한 주소로 즉시 통지합니다.
+④ 전항의 경우 "몰"은 이로 인하여 이용자가 입은 손해를 배상합니다. 다만, "몰"이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+
+
+제5조(서비스의 중단) 
+
+① "몰"은 컴퓨터 등 정보통신설비의 보수점검·교체 및 고장, 통신의 두절 등의 사유가 발생한 경우에는 서비스의 제공을 일시적으로 중단할 수 있습니다.
+② "몰"은 제1항의 사유로 서비스의 제공이 일시적으로 중단됨으로 인하여 이용자 또는 제3자가 입은 손해에 대하여 배상합니다. 단, "몰"이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.
+③ 사업종목의 전환, 사업의 포기, 업체간의 통합 등의 이유로 서비스를 제공할 수 없게 되는 경우에는 "몰"은 제8조에 정한 방법으로 이용자에게 통지하고 당초 "몰"에서 제시한 조건에 따라 소비자에게 보상합니다. 다만, "몰"이 보상기준 등을 고지하지 아니한 경우에는 이용자들의 마일리지 또는 적립금 등을 "몰"에서 통용되는 통화가치에 상응하는 현물 또는 현금으로 이용자에게 지급합니다.
+
+
+제6조(회원가입) 
+
+① 이용자는 "몰"이 정한 가입 양식에 따라 회원정보를 기입한 후 이 약관에 동의한다는 의사표시를 함으로서 회원가입을 신청합니다.
+② "몰"은 제1항과 같이 회원으로 가입할 것을 신청한 이용자 중 다음 각호에 해당하지 않는 한 회원으로 등록합니다.
+1. 가입신청자가 이 약관 제7조제3항에 의하여 이전에 회원자격을 상실한 적이 있는 경우, 다만 제7조제3항에 의한 회원자격 상실후 3년이 경과한 자로서 "몰"의 회원재가입 승낙을 얻은 경우에는 예외로 한다.
+2. 등록 내용에 허위, 기재누락, 오기가 있는 경우
+3. 기타 회원으로 등록하는 것이 "몰"의 기술상 현저히 지장이 있다고 판단되는 경우
+③ 회원가입계약의 성립시기는 "몰"의 승낙이 회원에게 도달한 시점으로 합니다.
+④ 회원은 제15조제1항에 의한 등록사항에 변경이 있는 경우, 즉시 전자우편 기타 방법으로 "몰"에 대하여 그 변경사항을 알려야 합니다.
+
+
+제7조(회원 탈퇴 및 자격 상실 등) 
+
+① 회원은 "몰"에 언제든지 탈퇴를 요청할 수 있으며 "몰"은 즉시 회원탈퇴를 처리합니다.
+② 회원이 다음 각호의 사유에 해당하는 경우, "몰"은 회원자격을 제한 및 정지시킬 수 있습니다.
+1. 가입 신청시에 허위 내용을 등록한 경우
+2. "몰"을 이용하여 구입한 재화등의 대금, 기타 "몰"이용에 관련하여 회원이 부담하는 채무를 기일에 지급하지 않는 경우
+3. 다른 사람의 "몰" 이용을 방해하거나 그 정보를 도용하는 등 전자상거래 질서를 위협하는 경우
+4. "몰"을 이용하여 법령 또는 이 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우
+③ "몰"이 회원 자격을 제한·정지 시킨후, 동일한 행위가 2회이상 반복되거나 30일이내에 그 사유가 시정되지 아니하는 경우 "몰"은 회원자격을 상실시킬 수 있습니다.
+④ "몰"이 회원자격을 상실시키는 경우에는 회원등록을 말소합니다. 이 경우 회원에게 이를 통지하고, 회원등록 말소전에 최소한 30일 이상의 기간을 정하여 소명할 기회를 부여합니다.
+
+
+제8조(회원에 대한 통지)
+
+① "몰"이 회원에 대한 통지를 하는 경우, 회원이 "몰"과 미리 약정하여 지정한 전자우편 주소로 할 수 있습니다.
+② "몰"은 불특정다수 회원에 대한 통지의 경우 1주일이상 "몰" 게시판에 게시함으로서 개별 통지에 갈음할 수 있습니다. 다만, 회원 본인의 거래와 관련하여 중대한 영향을 미치는 사항에 대하여는 개별통지를 합니다.
+
+
+제9조(구매신청) "몰"이용자는 "몰"상에서 다음 또는 이와 유사한 방법에 의하여 구매를 신청하며, "몰"은 이용자가 구매신청을 함에 있어서 다음의 각 내용을 알기 쉽게 제공하여야 합니다.  단, 회원인 경우 제2호 내지 제4호의 적용을 제외할 수 있습니다.
+1. 재화등의 검색 및 선택
+2. 성명, 주소, 전화번호, 전자우편주소(또는 이동전화번호) 등의 입력
+3. 약관내용, 청약철회권이 제한되는 서비스, 배송료·설치비 등의 비용부담과 관련한 내용에 대한 확인
+4. 이 약관에 동의하고 위 3.호의 사항을 확인하거나 거부하는 표시(예, 마우스 클릭)
+5. 재화등의 구매신청 및 이에 관한 확인 또는 "몰"의 확인에 대한 동의
+6. 결제방법의 선택
+
+
+제10조 (계약의 성립)
+
+①  "몰"은 제9조와 같은 구매신청에 대하여 다음 각호에 해당하면 승낙하지 않을 수 있습니다. 다만, 미성년자와 계약을 체결하는 경우에는 법정대리인의 동의를 얻지 못하면 미성년자 본인 또는 법정대리인이 계약을 취소할 수 있다는 내용을 고지하여야 합니다.
+1. 신청 내용에 허위, 기재누락, 오기가 있는 경우
+2. 미성년자가 담배, 주류등 청소년보호법에서 금지하는 재화 및 용역을 구매하는 경우
+3. 기타 구매신청에 승낙하는 것이 "몰" 기술상 현저히 지장이 있다고 판단하는 경우
+② "몰"의 승낙이 제12조제1항의 수신확인통지형태로 이용자에게 도달한 시점에 계약이 성립한 것으로 봅니다.
+③ "몰"의 승낙의 의사표시에는 이용자의 구매 신청에 대한 확인 및 판매가능 여부, 구매신청의 정정 취소등에 관한 정보등을 포함하여야 합니다.
+
+
+제11조(지급방법) "몰"에서 구매한 재화 또는 용역에 대한 대금지급방법은 다음 각호의 방법중 가용한 방법으로 할 수 있습니다. 단, "몰"은 이용자의 지급방법에 대하여 재화 등의 대금에 어떠한 명목의 수수료도  추가하여 징수할 수 없습니다.
+1. 폰뱅킹, 인터넷뱅킹, 메일 뱅킹 등의 각종 계좌이체 
+2. 선불카드, 직불카드, 신용카드 등의 각종 카드 결제
+3. 온라인무통장입금
+4. 전자화폐에 의한 결제
+5. 수령시 대금지급
+6. 마일리지 등 "몰"이 지급한 포인트에 의한 결제
+7. "몰"과 계약을 맺었거나 "몰"이 인정한 상품권에 의한 결제  
+8. 기타 전자적 지급 방법에 의한 대금 지급 등
+
+
+제12조(수신확인통지·구매신청 변경 및 취소)
+
+① "몰"은 이용자의 구매신청이 있는 경우 이용자에게 수신확인통지를 합니다.
+② 수신확인통지를 받은 이용자는 의사표시의 불일치등이 있는 경우에는 수신확인통지를 받은 후 즉시 구매신청 변경 및 취소를 요청할 수 있고 "몰"은 배송전에 이용자의 요청이 있는 경우에는 지체없이 그 요청에 따라 처리하여야 합니다. 다만 이미 대금을 지불한 경우에는 제15조의 청약철회 등에 관한 규정에 따릅니다.
+
+
+제13조(재화등의 공급)
+
+① "몰"은 이용자와 재화등의 공급시기에 관하여 별도의 약정이 없는 이상, 이용자가 청약을 한 날부터 7일 이내에 재화 등을 배송할 수 있도록 주문제작, 포장 등 기타의 필요한 조치를 취합니다. 다만, "몰"이 이미 재화 등의 대금의 전부 또는 일부를 받은 경우에는 대금의 전부 또는 일부를 받은 날부터 2영업일 이내에 조치를 취합니다.  이때 "몰"은 이용자가 재화등의 공급 절차 및 진행 사항을 확인할 수 있도록 적절한 조치를 합니다.
+② "몰"은 이용자가 구매한 재화에 대해 배송수단, 수단별 배송비용 부담자, 수단별 배송기간 등을 명시합니다. 만약 "몰"이 약정 배송기간을 초과한 경우에는 그로 인한 이용자의 손해를 배상하여야 합니다. 다만 "몰"이 고의·과실이 없음을 입증한 경우에는 그러하지 아니합니다.
+
+
+제14조(환급)
+
+"몰"은 이용자가 구매신청한 재화등이 품절 등의 사유로 인도 또는 제공을 할 수 없을 때에는 지체없이 그 사유를 이용자에게 통지하고 사전에 재화 등의 대금을 받은 경우에는 대금을 받은 날부터 2영업일 이내에 환급하거나 환급에 필요한 조치를 취합니다.
+
+
+제15조(청약철회 등)
+
+① "몰"과 재화등의 구매에 관한 계약을 체결한 이용자는 수신확인의 통지를 받은 날부터 7일 이내에는 청약의 철회를 할 수 있습니다.
+② 이용자는 재화등을 배송받은 경우 다음 각호의 1에 해당하는 경우에는 반품 및 교환을 할 수 없습니다.
+1. 이용자에게 책임 있는 사유로 재화 등이 멸실 또는 훼손된 경우(다만, 재화 등의 내용을 확인하기 위하여 포장 등을 훼손한 경우에는 청약철회를 할 수 있습니다)
+2. 이용자의 사용 또는 일부 소비에 의하여 재화 등의 가치가 현저히 감소한 경우
+3. 시간의 경과에 의하여 재판매가 곤란할 정도로 재화등의 가치가 현저히 감소한 경우
+4. 같은 성능을 지닌 재화등으로 복제가 가능한 경우 그 원본인 재화 등의 포장을 훼손한 경우
+③ 제2항제2호 내지 제4호의 경우에 "몰"이 사전에 청약철회 등이 제한되는 사실을 소비자가 쉽게 알 수 있는 곳에 명기하거나 시용상품을 제공하는 등의 조치를 하지 않았다면 이용자의 청약철회등이 제한되지 않습니다.
+④ 이용자는 제1항 및 제2항의 규정에 불구하고 재화등의 내용이 표시·광고 내용과 다르거나 계약내용과 다르게 이행된 때에는 당해 재화등을 공급받은 날부터 3월이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 청약철회 등을 할 수 있습니다.
+
+
+제16조(청약철회 등의 효과)
+
+① "몰"은 이용자로부터 재화 등을 반환받은 경우 3영업일 이내에 이미 지급받은 재화등의 대금을 환급합니다. 이 경우 "몰"이 이용자에게 재화등의 환급을 지연한 때에는 그 지연기간에 대하여 공정거래위원회가 정하여 고시하는 지연이자율을 곱하여 산정한 지연이자를 지급합니다.
+② "몰"은 위 대금을 환급함에 있어서 이용자가 신용카드 또는 전자화폐 등의 결제수단으로 재화등의 대금을 지급한 때에는 지체없이 당해 결제수단을 제공한 사업자로 하여금 재화등의 대금의 청구를 정지 또는 취소하도록 요청합니다.
+③ 청약철회등의 경우 공급받은 재화등의 반환에 필요한 비용은 이용자가 부담합니다. "몰"은 이용자에게 청약철회등을 이유로 위약금 또는 손해배상을 청구하지 않습니다. 다만 재화등의 내용이 표시·광고 내용과 다르거나 계약내용과 다르게 이행되어 청약철회등을 하는 경우 재화등의 반환에 필요한 비용은 "몰"이 부담합니다.
+④ 이용자가 재화등을 제공받을때 발송비를 부담한 경우에 "몰"은 청약철회시 그 비용을  누가 부담하는지를 이용자가 알기 쉽도록 명확하게 표시합니다.
+
+
+제17조(개인정보보호)
+
+① "몰"은 이용자의 정보수집시 구매계약 이행에 필요한 최소한의 정보를 수집합니다. 다음 사항을 필수사항으로 하며 그 외 사항은 선택사항으로 합니다. 
+1. 성명
+2. 주민등록번호(회원의 경우) 또는 외국인등록번호
+3. 주소
+4. 전화번호
+5. 희망ID(회원의 경우)
+6. 비밀번호(회원의 경우)
+7. 전자우편주소(또는 이동전화번호)
+② "몰"이 이용자의 개인식별이 가능한 개인정보를 수집하는 때에는 반드시 당해 이용자의 동의를 받습니다.
+③ 제공된 개인정보는 당해 이용자의 동의없이 목적외의 이용이나 제3자에게 제공할 수 없으며, 이에 대한 모든 책임은 몰이 집니다.  다만, 다음의 경우에는 예외로 합니다.
+1. 배송업무상 배송업체에게 배송에 필요한 최소한의 이용자의 정보(성명, 주소, 전화번호)를 알려주는 경우
+2. 통계작성, 학술연구 또는 시장조사를 위하여 필요한 경우로서 특정 개인을 식별할 수 없는 형태로 제공하는 경우
+3. 재화등의 거래에 따른 대금정산을 위하여 필요한 경우
+4. 도용방지를 위하여 본인확인에 필요한 경우
+5. 법률의 규정 또는 법률에 의하여 필요한 불가피한 사유가 있는 경우
+④ "몰"이 제2항과 제3항에 의해 이용자의 동의를 받아야 하는 경우에는 개인정보관리 책임자의 신원(소속, 성명 및 전화번호, 기타 연락처), 정보의 수집목적 및 이용목적, 제3자에 대한 정보제공 관련사항(제공받은자, 제공목적 및 제공할 정보의 내용) 등 정보통신망이용촉진등에관한법률 제22조제2항이 규정한 사항을 미리 명시하거나 고지해야 하며 이용자는 언제든지 이 동의를 철회할 수 있습니다.
+⑤ 이용자는 언제든지 "몰"이 가지고 있는 자신의 개인정보에 대해 열람 및 오류정정을 요구할 수 있으며 "몰"은 이에 대해 지체없이 필요한 조치를 취할 의무를 집니다. 이용자가 오류의 정정을 요구한 경우에는 "몰"은 그 오류를 정정할 때까지 당해 개인정보를 이용하지 않습니다.
+⑥ "몰"은 개인정보 보호를 위하여 관리자를 한정하여 그 수를 최소화하며 신용카드, 은행계좌 등을 포함한 이용자의 개인정보의 분실, 도난, 유출, 변조 등으로 인한 이용자의 손해에 대하여 모든 책임을  집니다.
+⑦ "몰" 또는 그로부터 개인정보를 제공받은 제3자는 개인정보의 수집목적 또는 제공받은 목적을 달성한 때에는 당해 개인정보를 지체없이 파기합니다.
+
+
+제18조(“몰“의 의무)
+
+① "몰"은 법령과 이 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며 이 약관이 정하는 바에 따라 지속적이고, 안정적으로 재화·용역을 제공하는데 최선을 다하여야 합니다.
+② "몰"은 이용자가 안전하게 인터넷 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함)보호를 위한 보안 시스템을 갖추어야 합니다.
+③ "몰"이 상품이나 용역에 대하여 「표시·광고의공정화에관한법률」 제3조 소정의 부당한 표시·광고행위를 함으로써 이용자가 손해를 입은 때에는 이를 배상할 책임을 집니다.
+④ "몰"은 이용자가 원하지 않는 영리목적의 광고성 전자우편을 발송하지 않습니다.
+
+
+제19조(회원의 ID 및 비밀번호에 대한 의무)
+
+① 제17조의 경우를 제외한 ID와 비밀번호에 관한 관리책임은 회원에게 있습니다.
+② 회원은 자신의 ID 및 비밀번호를 제3자에게 이용하게 해서는 안됩니다.
+③ 회원이 자신의 ID 및 비밀번호를 도난당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 "몰"에 통보하고 "몰"의 안내가 있는 경우에는 그에 따라야 합니다.
+
+
+제20조(이용자의 의무) 이용자는 다음 행위를 하여서는 안됩니다.
+1. 신청 또는 변경시 허위 내용의 등록
+2. 타인의 정보 도용
+3. "몰"에 게시된 정보의 변경
+4. "몰"이 정한 정보 이외의 정보(컴퓨터 프로그램 등) 등의 송신 또는 게시
+5. "몰" 기타 제3자의 저작권 등 지적재산권에 대한 침해
+6. "몰" 기타 제3자의 명예를 손상시키거나 업무를 방해하는 행위
+7. 외설 또는 폭력적인 메시지, 화상, 음성, 기타 공서양속에 반하는 정보를 몰에 공개 또는 게시하는 행위
+
+
+제21조(연결"몰"과 피연결"몰" 간의 관계)
+
+① 상위 "몰"과 하위 "몰"이 하이퍼 링크(예: 하이퍼 링크의 대상에는 문자, 그림 및 동화상 등이 포함됨)방식 등으로 연결된 경우, 전자를 연결 "몰"(웹 사이트)이라고 하고 후자를 피연결 "몰"(웹사이트)이라고 합니다.
+② 연결"몰"은 피연결"몰"이 독자적으로 제공하는 재화등에 의하여 이용자와 행하는 거래에 대해서 보증책임을 지지 않는다는 뜻을 연결"몰"의 초기화면 또는 연결되는 시점의 팝업화면으로 명시한 경우에는 그 거래에 대한 보증책임을 지지 않습니다.
+
+
+제22조(저작권의 귀속 및 이용제한)
+
+① “몰“이 작성한 저작물에 대한 저작권 기타 지적재산권은 ”몰“에 귀속합니다.
+② 이용자는 "몰"을 이용함으로써 얻은 정보 중 "몰"에게 지적재산권이 귀속된 정보를 "몰"의 사전 승낙없이 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.
+③ "몰"은 약정에 따라 이용자에게 귀속된 저작권을 사용하는 경우 당해 이용자에게 통보하여야 합니다.
+
+
+제23조(분쟁해결)
+
+① "몰"은 이용자가 제기하는 정당한 의견이나 불만을 반영하고 그 피해를 보상처리하기 위하여 피해보상처리기구를 설치·운영합니다.
+② "몰"은 이용자로부터 제출되는 불만사항 및 의견은 우선적으로 그 사항을 처리합니다. 다만, 신속한 처리가 곤란한 경우에는 이용자에게 그 사유와 처리일정을 즉시 통보해 드립니다.
+③ "몰"과 이용자간에 발생한 전자상거래 분쟁과 관련하여 이용자의 피해구제신청이 있는 경우에는 공정거래위원회 또는 시·도지사가 의뢰하는 분쟁조정기관의 조정에 따를 수 있습니다.
+
+
+제24조(재판권 및 준거법)
+
+① "몰"과 이용자간에 발생한 전자상거래 분쟁에 관한 소송은 제소 당시의 이용자의 주소에 의하고, 주소가 없는 경우에는 거소를 관할하는 지방법원의 전속관할로 합니다. 다만, 제소 당시 이용자의 주소 또는 거소가 분명하지 않거나 외국 거주자의 경우에는 민사소송법상의 관할법원에 제기합니다.
+② "몰"과 이용자간에 제기된 전자상거래 소송에는 한국법을 적용합니다.
+
+
+부칙 
+
+1. 이 약관은 0000년 00월 00일부터 적용됩니다.</p>
+						<p class="terms_textarea_txt"><label for="terms_textarea_contants_consent">이용약관에 동의하십니까?</label> <input type="checkbox" name="" class="mgl20" id="terms_textarea_contants_consent">동의함</p>
+					</div>
+				</div>
+				<!-- // 내국인 이용약관 동의 -->
+				<!-- 내국인 개인정보 수집 및 이용 동의 -->
+				<div class="information_textarea_group">
+					<h4>개인정보 수집 및 동의</h4>
+					<div class="information_textarea">
+						<p class="information_textarea_contants">개인정보의 수집목적 및 이용목적
+
+① 모바일 라운지는 회원님께 최대한으로 최적화되고 맞춤화된 서비스를 제공하기 위하여 다음과 같은 목적으로 개인정보를 수집하고 있습니다. 
+- 성명, 아이디, 비밀번호, 주민등록번호 : 회원제 서비스 이용에 따른 본인 식별 절차에 이용 
+- 이메일주소, 이메일 수신여부, 전화번호 : 고지사항 전달, 본인 의사 확인, 불만 처리 등 원활한 의사소통 경로의 확보, 새로운 서비스/신상품이나 이벤트 정보의 안내 
+- 주소, 전화번호 : 경품과 쇼핑 물품 배송에 대한 정확한 배송지의 확보 
+- 비밀번호 힌트용 질문과 답변 : 비밀번호를 잊은 경우의 신속한 처리를 위한 내용 
+- 그 외 선택항목 : 개인맞춤 서비스를 제공하기 위한 자료 ② 단, 이용자의 기본적 인권 침해의 우려가 있는 민감한 개인정보(인종 및 민족, 사상 및 신조, 출신지 및 본적지, 정치적 성향 및 범죄기록, 건강상태 및 성생활 등)는 수집하지 않습니다.
+개인정보의 수집범위
+모바일 라운지는 별도의 회원가입 절차 없이 대부분의 컨텐츠에 자유롭게 접근할 수 있습니다. 모바일라운지의 회원제 서비스를 이용하시고자 할 경우 다음의 정보를 입력해주셔야 하며 선택항목을 입력하시지 않았다 하여 서비스 이용에 제한은 없습니다. 
+1) 회원 가입시 수집하는 개인정보의 범위 
+- 필수항목 : 희망 ID, 비밀번호, 비밀번호 힌트용 질문과 답변, 성명, 주민등록번호, 주소, 전화번호, 이메일주소, 이메일 수신 여부 
+- 선택항목 : 회사주소, 회사전화번호, 생년월일, 결혼여부, 결혼기념일, 직업, 월평균소득, 최종학력, 자녀수, 차량정보
+비회원의 고객 개인정보보호
+모바일 라운지는 회원 뿐만 아니라 비회원 또한 물품 및 서비스 상품의 구매를 하실 수 있습니다. 모바일 라운지는 비회원 주문의 경우 배송 및 대금 결제, 상품 배송에 반드시 필요한 개인정보 만을 고객에게 요청하고 있습니다.
+모바일라운지에서 비회원으로 구매를 하신 경우 비회원 고객께서 입력하신 지불인 정보 및 수령인 정보는 대금 결제 및 상품 배송에 관련한 용도 외에는 다른 어떠한 용도로도 사용되지 않습니다. 
+모바일라운지 비회원의 경우도 모바일라운지 회원과 동일하게 개인정보를 보호합니다.
+쿠키에 의한 개인정보 수집
+① 쿠키(cookie)란? 
+모바일 라운지는 귀하에 대한 정보를 저장하고 수시로 찾아내는 쿠키(cookie)를 사용합니다. 쿠키는 웹사이트가 귀하의 컴퓨터 브라우저(넷스케이프, 인터넷 익스플로러 등)로 전송하는 소량의 정보입니다. 귀하께서 웹사이트에 접속을 하면 모바일라운지의 컴퓨터는 귀하의 브라우저에 있는 쿠키의 내용을 읽고, 귀하의 추가정보를 귀하의 컴퓨터에서 찾아 접속에 따른 성명 등의 추가 입력 없이 서비스를 제공할 수 있습니다. 쿠키는 귀하의 컴퓨터는 식별하지만 귀하를 개인적으로 식별하지는 않습니다. 또한 귀하는 쿠키에 대한 선택권이 있습니다. 웹브라우저 상단의 도구 > 인터넷옵션 탭(option tab)에서 모든 쿠키를 다 받아들이거나, 쿠키가 설치될 때 통지를 보내도록 하거나, 아니면 모든 쿠키를 거부할 수 있는 선택권을 가질 수 있습니다. 
+② 모바일라운지의 쿠키(cookie) 운용 
+모바일 라운지는 이용자의 편의를 위하여 쿠키를 운영합니다. 모바일라운지이 쿠키를 통해 수집하는 정보는 모바일라운지 회원 ID에 한하며, 그 외의 다른 정보는 수집하지 않습니다. 모바일라운지이 쿠키(cookie)를 통해 수집한 회원 ID는 다음의 목적을 위해 사용됩니다. 
+- 개인의 관심 분야에 따라 차별화된 정보를 제공 
+- 회원과 비회원의 접속빈도 또는 머문시간 등을 분석하여 이용자의 취향과 관심분야를 파악하여 타겟(target) 마케팅에 활용 
+- 쇼핑한 품목들에 대한 정보와 관심있게 둘러본 품목들에 대한 자취를 추적하여 다음번 쇼핑 때 개인 맞춤 서비스를 제공 
+- 회원들의 습관을 분석하여 서비스 개편 등의 척도 
+- 게시판 글 등록 
+쿠키는 브라우저의 종료시나 로그아웃시 만료됩니다.
+개인정보의 보유기간 및 이용기간
+① 귀하의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 파기됩니다. 단, 상법 등 관련법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다. 
+- 회원가입정보의 경우, 회원가입을 탈퇴하거나 회원에서 제명된 경우 등 일정한 사전에 보유목적, 기간 및 보유하는 개인정보 항목을 명시하여 동의를 구합니다. 
+- 계약 또는 청약철회 등에 관한 기록 : 5년 
+- 대금결제 및 재화등의 공급에 관한 기록 : 5년 
+- 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년 
+② 귀하의 동의를 받아 보유하고 있는 거래정보 등을 귀하께서 열람을 요구하는 경우 모바일 라운지는 지체없이 그 열람,확인 할 수 있도록 조치합니다.</p>
+						<p class="information_textarea_txt"><label for="information_textarea_contants_consent">개인정보 수집 및 이용에 동의하십니까?</label> <input type="checkbox" name="" class="mgl20" id="information_textarea_contants_consent">동의함</p>
+					</div>
+				</div>
+				<!-- // 내국인 개인정보 수집 및 이용 동의 -->
+				<div class="sign_up_btn_area">
+					<button class="red_btn" onclick="domestic_alert();">회원가입</button>
+					<button class="blk_btn">가입취소</button>
+				</div>
+				<!-- 외국인 이용약관 동의 -->
+				<div class="terms_textarea_group foreigner_terms_textarea_group hidden">
+					<h4>Please carefully read the Member Terms & Policy first before you sign up</h4>
+					<div class="terms_textarea">
+						<p class="terms_textarea_contants">Article 1 (Purpose)
+The purpose of these Terms and Conditions is with respect to the use of the Internet related services (hereinafter referred to as “Services”) provided by the cyber shopping mall  mobilelounge (hereinafter referred to as “Mall”) operated by WIDMOBILE Inc. (hereinafter referred to as “Company”), to set forth the rights, obligations, and duties between the Company and users.
+ 
+Article 2 (Definitions)
+① “Mall” shall refer to a virtual business place established in order for users to make transactions for goods, etc. by using information communication facilities including computers to ensure that the Company provides users with goods or services (hereinafter referred to as “Goods, etc.”), and shall also refer to an enterpriser who operates a cyber mall.
+② “Users” shall refer to members and non-members who get access to the “Mall” and receive the Services provided by the “Mall” under these Terms and Conditions.
+③ “Members” shall refer to persons who have provided their personal information to the Company and registered their membership for the Services, and who can be continuously provided with information of the Services and continue to use the Services provided by the Company.
+ 
+Article 3 (Posting and Modification of Terms and Conditions)
+① The Company shall post the content of these Terms and Conditions, the Company’ s trade name, the name of its representative director, the address where its business place is located (including the address where complaints of consumers can be handled), telephone numbers, fax transmitter numbers, e-mail addresses, business registration numbers, the declaration number of communication sales business, the personal information manager, etc. on the start-up screen (the entire page) of the Services in order to ensure that users can easily see the information; provided, however, that the content of these Terms and Conditions may be made for users to see the content through the connected screens.
+② The Company may request users of confirmation by providing a separate connection screen or pop-up screen to ensure that users can understand the important content, such as Withdrawal of Offer, Liability for Shipping, Conditions for Return, among the content set forth in these Terms and Conditions before users consent to these Terms and Conditions.
+③ The Company may modify these Terms and Conditions to the extent that it does not violate relevant laws, including the Act Relating to Consumer Protection in Electronic Commercial Transactions, the Act Relating to Regulation of Contractual Terms and Conditions, the Electronic Transaction Basic Act, the Electronic Signature Act, the Act Relating to Information Protection for Information Communication Network Use Promotion, etc., the Act Relating to Door-to-Door Sales, the Consumer Protection Act.
+④ In the event that the Company modifies these Terms and Conditions, it shall specify and post on the start-up screen for the Services the date of application and the reasons for modification together with the current Terms and Conditions from seven (7) days before the date of application; provided, however, that where these Terms and Conditions are modified unfavorably against the users, the content shall be notified with a prior grace period of at least no less than thirty (30) days.  In this case, the Company shall specify the content before and after the modifications by clear comparison to ensure that users can easily see the content.
+⑤ In the event that a user does not consent to the modified Terms and Conditions, the Company may block the use of the Services.  If the user continues to use the Services, the user shall be deemed to have consented to the modifications of these Terms and Conditions.
+ 
+Article 4 (Applicable Rules Other Than These Terms and Conditions)
+Any matter that is not provided in these Terms and Conditions or any interpretation of this agreement shall follow the Act Relating to Consumer Protection in Electronic Commercial Transactions, the Act Relating to Regulation of Contractual Terms and Conditions, the Guidelines for Consumer Protection in Electronic Commercial Transactions set forth by the Korea Fair Trade Commission, and relevant laws or commercial practices.
+ 
+Article 5 (Provisions and Changes of Services)
+① The Company shall provide the following services:
+1. To provide information on goods or services and enter into purchase agreements;
+2. To ship the goods or services for which a purchase agreement is entered into; and
+3. To provide any other services set forth by the Company.
+② In the event that the qualities or technical specifications of the goods or services are changed, the Company may change the content of goods or services to be provided under an agreement to be entered into in the future.  In this case, the Company shall post on the Services and notify the content of the changed goods or services, the date of provisions, etc.
+③ In the event that it is unavoidable for the Company to change the content of the Services to be provided under agreements with users because of the qualities of goods, etc. or a change in technical specifications, etc., the Company shall forthwith notify users of the reasons.
+④ In case of the prior Section, the Company shall compensate for damages incurred to users as a result; provided, however, that it shall not be the case where the absence of willfulness or negligence of the Company is proven.
+ 
+Article 6 (Suspension of Services)
+① In the event that there are reasons including the repairs, checking, exchanges, and failures of information communications equipment including computers, or stoppage of communications, etc., the Company may temporarily suspend the provisions of the Services.
+② The Company shall compensate for damages incurred to users as a result of the temporary suspension of the provisions of the Services for the reasons of Section ①; provided, however, that it shall not be the case where the absence of willfulness or negligence of the Company is proven.
+③ In the event that the Company has become unable to provide the Services for the reasons of conversion of business items, renunciation of businesses, or integration between companies, etc., it shall give users a notice thereof in the manner set forth in Article 8.
+ 
+Article 7 (Membership Subscription)
+① A user shall apply for membership subscription by giving his or her manifestation of intention to consent to these Terms and Conditions after entering the membership information according to the subscription form prescribed by the Company.
+② The Company shall register users who have applied for membership subscription under Section ① unless a user falls under each of the following items:
+1. In the event that a subscription applicant has ever lost his or her prior membership qualifications under Article 7 Section ③ of these Terms and Conditions (provided, however, that exceptions shall be made where three (3) years has lapsed after a user has lost his or her membership qualifications under Article 7 Section ③ and the user has obtained approval of re-subscription from the Company.);
+2. In the event that there are false information, omitted information, or mistaken entries in the registered matters; or
+3. In the event that a user’s membership registration is found to seriously affect the Company’s technologies.
+③ An agreement for membership subscription shall be formed at the time when approval by the Company arrives at a User.
+④ In the event that there is a change in the registered matters provided to the Company at the time when a Member has applied for membership or applied for a purchase agreement, the Member shall forthwith notify the Company of the change(s) by e-mail or in any other way.
+ 
+Article 8 (Withdrawal from Membership and Disqualifications, etc.)
+① Members may at any time request the Company of their withdrawal from membership, and the Company shall forthwith handle the withdrawals from membership.
+② In the event that a Member falls under each of the following reasons, the Company may restrict or discontinue his or her membership qualifications:
+1. In the event that a Member has registered false information at the time of applying for membership;
+2. In the event that a Member has not paid amounts for goods, etc. purchased by use of the Services, or any other liabilities payable by the Member with respect to use of the Services;
+3. In the event that a Member threatens the order of electronic commercial transactions by obstructing third parties’ uses of the Services or misappropriating the information; or
+4. In the event that a Member engages in activities that are prohibited under the laws or these Terms and Conditions, or are against the public orders and good morals by using the Services; or
+③ In the event that after the Company has restricted or suspended the membership qualifications for a Member, the Member repeats the same activity no less than twice or the reason is not corrected within thirty (30) days, the Company may forfeit he membership.
+④ In the event that the Company has forfeited the membership qualifications, it shall cancel the membership registration.  In this case, the Company shall notify the Member thereof and provide an opportunity to explain away by specifying a period of at least no less than thirty (30) days before cancellation of the membership registration.
+ 
+Article 9 (Notifications for Members)
+1. In the event that the Company gives a notice to users, it may do so with the e-mail addresses provided to the Company by the users.
+2. In the event that the Company gives a notice to unspecified and many users, it may replace individual notifications with posting the notifications on the service bulletin board for no less than one (1) week; provided, however, that individual notifications shall be given with respect to the matters that seriously affect a Member’s own transactions.  
+ 
+Article 10 (Application for Purchase)
+Users shall apply for purchase of the goods, etc. in the manner prescribed in the Services.  When users apply for purchases, the Company shall provide each of the following content to ensure that users can easily see the content:
+1. To search and select the goods, etc.;
+2. To enter names, addresses, telephone numbers, e-mail addresses (or mobile phone numbers), etc.;
+3. To confirm the content related to the content of these Term and Conditions, the services for which the right to withdraw offers is restricted, payments of cost, including shipping fees, installation fees;
+4. To apply for, confirm the purchase of the goods, etc., or consent to confirmation by the Company; and
+5. To select a payment method and specify an agency for payment.
+ 
+Article 11 (Formation of Agreement)
+① The Company may not accept an application for purchase in Article 9 if it falls under each of the following items (provided, however, that the Company shall notify that where it enters into an agreement with a minor, the minor or his/her legal representative may cancel the agreement if consent by a legal representative is not obtained):
+1. In the event that the registrations have false, omitted, or mistaken information; 
+2. In the event that a minor purchases goods or services prohibited under the Juvenile Protection Act, such as cigarettes, alcohols; or
+3. In the event that the Company’s acceptance of a purchase order is found to seriously affect the Company’s technologies.
+② An agreement shall be deemed formed at the time when acceptance by the Company arrives at a user in the notification form of receipt confirmation in Article 13 Section ①.
+④ The Company’s manifestation of intent to accept shall include such information as the Company’s verification of a user’s purchase application and the possibility when the goods or services may be sold, the Company’s correction or cancellation of a purchase application.
+ 
+Article 12 (Payment Method)
+The payment methods for the goods or services purchased through the Services shall be as described in each of the following items.  The Company shall not add to the amounts for services, etc. and request fees in whatever names according to the payment methods.
+1. Various account transfers including phone banking, the Internet banking, mail banking;
+2. Various payments by cards including prepaid cards, debit cards, credit cards;
+3. Online no pass book deposits;
+4. Payments by electronic currencies;
+5. Payments upon receipt thereof;
+6. Payments with points given by the Company, including mileages;
+7. Payments with gift certificates for which the Company has entered an agreement, or with those found acceptable by the Company; and
+8. Payments in any other electronic payment method.
+ 
+Article 13 (Notification of Receipt Confirmation, Change or Cancellation of Application for Purchase)
+① In the event that a user applies for purchase, the Company shall give the user a notification of receipt confirmation.
+② In the event that there is a discrepancy of the manifestation of intent, etc., immediately after a user has received a notification of receipt confirmation, the user may request a change or cancellation of the purchase application.  In the event that there is a request by a user before shipping of the goods, etc., the Company shall without delay handle the request; provided, however, that where the user has previously made payments, the rule for withdrawal of offer in Article 16 shall apply.
+ 
+Article 14 (Provisions of Goods, etc.)
+① The Company shall manufacture, pack, the ordered goods, etc. or take any other necessary measures to ensure that the goods, etc. can be shipped within seven (7) days from the date when a user has given his or her offer unless there is a separate agreement otherwise between the Company and the user as to the time for supply of the goods, etc.  In this case, the Company shall take appropriate measures to ensure that the user can verify the supply procedures for the goods, etc. and the progresses.
+② The Company shall specify the shipping means, payers of shipping costs by means, the shipping period by means, etc. with respect to the goods purchased by users.  In the event that the Company has exceeded the agreed shipping period, it shall compensate for damages incurred to users as a result; provided, however, that it shall not be the case where the absence of willfulness or negligence of the Company is proven.
+ 
+Article 15 (Refund)
+In the event that the Company is unable to provide the goods, etc. requested by a user for purchase because the goods, etc. are sold out, it shall without delay notify the user of the reasons.  In the event that the Company has received payments for the goods, etc., it shall refund the payments or take measures for refund within two (2) days from the date when it has previously received the payments.
+ 
+Article 16 (Withdrawal of Offers, etc.)
+① A user who has entered into an agreement for purchase of goods, etc. with the Company may withdraw his or her offer within seven (7) days from the date when it has received a notice of receipt confirmation.
+② A user may not return or exchange the goods, etc. where the user has received the goods, etc. purchased through the Services but falls under each of the following items:
+1. In the event that the goods, etc. has been lost or damaged because of the reasons attributable to the user (provided, however, that the user may withdraw his or her offer where the packing, etc. has been damaged to verify the content of the goods, etc.);
+2. In the event that the value of the goods, etc. has seriously decreased because of the use or partial consumption by the user;
+3. In the event that the value of the goods, etc. has seriously decreased to the extent that it is difficult to resell the goods, etc. because of the lapse of time; or
+4. In the event that where the goods, etc. may be duplicated with goods, etc. of the same functionality, the packing of the original goods, etc. has been damaged.
+③ In case of Section ② No. 2 or Section ④, if the Company fails to take measures to specify in advance the restrictions on withdrawal of offer, etc. at a place easily seen by consumers or provide sample goods, the user’s withdrawal of offer, etc. shall not be restricted.
+④ Notwithstanding the provisions of Sections ① and ②, in the event that the content of the goods, etc. is different from the labeled or advertised content or has been performed differently from the agreements, a user may withdraw his or her offer within three (3) months from the date when the user has been provided with the goods, etc. or within thirty (30) days from the date when the user has known or should have known the fact.
+ 
+Article 17 (Consequences of Withdrawal of Offer, etc.)
+① In the event that a user has returned the goods, etc. to the Company, the Company shall refund the payments for the goods, etc. previously provided within three (3) business days.  In this case, when the Company has delayed in refunding to the user payments for the goods, etc., it shall pay an interest for delay calculated by multiplying the period of delay by the interest rate for delay prescribed and publicly announced by the Korea Fair Trade Commission.
+② In the event that a user has made payments for the goods, etc. by payment means of credit cards or electronic currencies, when the Company refunds the payments, it shall without delay request an enterpriser who has provided the payment means to suspend or cancel the request of payments for the goods, etc.
+③ In case of withdrawal of offer, etc., costs required to return the goods, etc. provided shall be borne by users.  The Company shall not request users of penalties for violations or compensation for damages because of their withdrawal of offer, etc.; provided, however, that where a user withdraws his or her offer as the content of the goods, etc. is different from the labeled or advertised content or has been performed differently from the agreements, costs required to return the goods, etc. shall be borne by the Company.
+④ In the event that a user has paid shipping costs when the user has received the goods, etc., the Company shall clearly specify who should pay the costs in a way easily understandable by users at the time of the user’s withdrawal of offer.
+ 
+Article 18 (Protection of Personal Information)
+① The Company shall collect the minimum information required to perform a purchase agreement in collecting information of users.  The following information shall be required items, and other information shall be selective items:
+1. Names
+2. IDs
+3. Passwords
+4. E-mail addresses
+5. Addresses
+6. Mobile phone numbers
+7. Telephone numbers
+8. IP Addresses
+9. Payment records.
+② The Company must obtain consent of the users when collecting the personal information with which users can be personally identified.
+③ The personal information provided by a user shall not be used for purposes other than the purpose of the provisions or provided to third parties without consent of the user; provided, however, that exceptions shall be made in the following events:
+1. In the event that the Company notifies a shipping company of the minimum information of users (names, addresses, telephone numbers) required to ship the goods or services for shipping businesses;
+2. In the event that the Company provides information in a way that specific individuals cannot be identified, as required to prepare statistics, do academic research works, or investigate markets;
+3. In the event that it is necessary to make payments for transactions of goods, etc.;
+4. In the event that it is necessary to identify oneself to prevent information from being misappropriated; or
+5. In the event that there is an unavoidable reason required under the provisions of laws or the laws.
+④ In the event that the Company is required to obtain consent from a user pursuant to Section ② or ③, it shall specify or notify in advance the matters set forth in Article 22 Section ② of the Act Relating to Information Communication Network Use Promotion and Information Protection, including the identity of personal information manager (name, telephone number, other contract information), the purpose of collecting or using information, matters related to provisions of information to third parties (persons provided with information, the purpose of provisions, the content of information to be provided), the consent to which may be withdrawn at any time by users.  \
+⑤ Users may at any time request reading or correction of their personal information that the Company has, as to which the Company shall have the obligation to take necessary measures without delay.  In the event that a user has requested corrections of errors, the Company shall not use the personal information until it corrects the errors.
+⑥ The Company shall keep the number of personal information manager to a minimum in order to protect personal information.  The Company shall take all responsibilities for damages incurred to users as a result of users’ losing, being stolen of, disclosing, or altering their personal information including credit cards, bank accounts.
+⑦ A third party that has received the Services or the personal information from the Services shall without delay destroy the personal information when the purpose of its collecting or being provided with the personal information has been fulfilled. 
+ 
+Article 19 (Duties of Company)
+① The Company shall not engage in any activity that is prohibited under the laws or these Terms and Conditions or against the public orders and good morals, and shall use its best efforts to provide the goods or services continuously and securely as set forth under these Terms and Conditions.
+② The Company shall have a security system for personal information protection for users (including credit information) to ensure that users can safely use the Services.
+③ In the event that the Company has caused damages to users by its engaging in unreasonable labeling or advertising activities prescribed in Article 3 of the Fair Labeling and Advertisement Act with respect to its goods or services, it shall compensate for the damages.
+④ The Company shall not send advertising e-mails for profitable purposes unwanted by users.
+ 
+Article 20 (Duties of Members for IDs and Passwords)
+① Members shall have the obligation to have third IDs and passwords under control except for the case of Article 18.
+② Members shall not cause a third party to use their own IDs or passwords.
+③ In the event that a Member has been aware that his or her ID or password has been stolen or is being used by a third party, the Member shall forthwith notify the Company thereof, and follow the directions of the Company, if any.
+ 
+Article 21 (Duties of Users) Users shall not engage in the following activities:
+1. To register false information at the time of applying for or changing the content of membership;
+2. To misappropriate third parties’ information;
+3. To change information posted in the Services;
+4. To transmit or post information other than the information set forth by the Services (including computer software);
+5. To infringe upon intellectual properties, including the Services, any other third party’s copyrights;
+6. To undermine the reputation of or obstruct businesses of the Services or third parties; or
+7. To disclose or post on the Services obscene or violent messages, videos, voices, and any other information that is against the public orders and good morals.
+ 
+Article 22 (The Relationship between Connecting “Mall” and Connected “Mall”)
+① In the event that the upper “Mall” and the lower “Mall” are connected by hyperlink, etc. (e.g., the subject for hyperlinks shall include letters, photos, or video pictures), the former shall be referred to as the connecting “Mall” (Website) whereas the latter shall be referred to as the connected “Mall” (Website).
+② Where the fact that the Company shall not be responsible for providing guarantees for transactions made with users by the goods or services independently provided by the connecting “Mall” and the connected “Mall,” is specified on the start-up screen of the connecting “Mall” or the pop-up screen at the time of being connected, it shall not be responsible for providing guarantees for the transactions.
+ 
+Article 23 (Reversion of Copyrights, Use Restrictions)
+① The copyrights and other intellectual property rights to the works prepared by the Company shall revert to the Company.
+② Without the prior permission of the Company, users shall not duplicate, transmit, publish, distribute, broadcast, use by other means for profitable purposes, or cause a third party to use any information acquired in using the Services..
+③ In the event that the Company uses any copyright reverted to a user under these Terms and Conditions, it shall notify the user thereof.
+ 
+Article 24 (Dispute Resolution)
+① The Company shall establish and operate a damages compensation department to ensure that it reflects reasonable opinions or complaints raised by users and compensate for the damages. 
+② The Company shall first handle complaints or opinions given by a user; provided, however, that where it is difficult to handle them promptly, the Company shall forthwith notify the user of the reasons and action schedules.
+③ In the event that a user files an application for remedy of damages with respect to electronic commercial transaction disputes incurred between the Company and the user, the Company may be subject to settlements rendered by the Korea Fair Trade Commission or a dispute settlement authority requested by governors of cities or provinces.
+ 
+Article 25 (Jurisdiction and Governing Laws)
+① Any lawsuit relating to electronic commercial transactions incurred between the Company and users shall be brought to a competent court of jurisdiction under the Civil Procedural Code.
+② Any lawsuit for electronic commercial transactions brought between the Company and users shall be governed by the Korean laws.
+ 
+ 
+These Terms and Conditions shall be applicable from Friday, May 23, 2014.</p>
+						<p class="terms_textarea_txt"> <input type="checkbox" name="" class="mgl20" id="foreigner_terms_textarea_contants_consent">
+						<label for="foreigner_terms_textarea_contants_consent">I agree with the Terms & Policy.</label></p>
+					</div>
+				</div>
+				<!-- // 외국인 이용약관 동의 -->
+				<!-- 외국인 개인정보 수집 및 이용 동의 -->
+				<div class="information_textarea_group foreigner_information_textarea_group hidden">
+					<h4>Privacy Policy</h4>
+					<div class="information_textarea">
+						<p class="information_textarea_contants">■&nbsp;Items of Personal Information to be Collected and Collection Methods
+The Company collects the following personal information for purposes of providing membership services, including membership subscriptions, consultations, prevention of wrongful uses:
+ 
+* Required items : names, IDs, passwords, e-mail addresses, addresses, mobile phone numbers, telephone numbers, IP addresses, payment records,
+* Selective items : Information required by the Company to provide customized services.
+ 
+■&nbsp;Purpose of Collection and Use of Personal Information
+The Company uses the collected personal information for the following purposes:
+ 
+- Payment of costs incurred as a result of performing agreements on provisions of services or providing services, Provisions of the contents, purchases or cost payments, deliveries of goods or sending bills, etc., verifying identifications for financial transactions, and financial services
+ 
+- Control of Members
+To verify identifications for uses of membership services, to identify individuals, to prevent wrongful uses of bad members or unauthorized uses, to verify intents for subscriptions, to verify ages, to verify the consent of a legal representative for collecting personal information of children of not more than fourteen (14) years old, to handle civil complaints including handling grievances, to convey notifications
+ 
+- Use for Marketing and Advertisements
+To convey information for advertisements including events, to figure out contact frequencies, to obtain statistics on service uses by members
+ 
+■&nbsp;Retention and Use Period for Personal Information
+In principle, after the purposes of collecting and using personal information have been fulfilled, the Company shall without delay destroy relevant information; provided, however, that the Company shall retain personal information for a certain period of time where it is required to do so for purposes of confirming transactions related management and rights under the provisions of relevant laws including the Commercial Code and the Act Relating to Consumer Protection in Electronic Commercial Transactions as follows: 
+- Records on agreements or withdrawals of offers : five (5) years (the Act Relating to Consumer Protection in Electronic Commercial Transactions, etc.)
+- Records on payments and supplies of goods : five (5) years (the Act Relating to Consumer Protection in Electronic Commercial Transactions, etc.)
+- Records on complaints of consumers or dispute resolutions : three (3) years (the Act Relating to Protection of Consumers in Electronic Commercial Transactions, etc.)
+- Where personal information has been collected for temporary purposes, such as questionnaires, events : at the time of completion of a particular questionnaire or event
+- Records on verification of identification: six (6) months (the Act Relating to Information Communication Network Promotion and Personal Information Protection)
+- Records on visits (log-ins) : three (3) months (the Communication Secret Protection Act)
+ 
+■&nbsp;Provisions of Personal Information to Third Parties
+The Company uses the personal information of users within the scope that users have consented to the “Purpose of Collecting and Using Personal Information,” but does not use the personal information of users in excess of the scope without prior consent of users or in principle does not disclose the personal information of users to the outside; provided, however, that exceptions are made in the following cases: 
+- Where users have given a prior consent thereto; or
+- Where there is required under the provisions of laws or requested by investigating agencies according to the procedures and methods prescribed under the laws for investigation purposes.
+						</p>
+						<p class="information_textarea_txt"> <input type="checkbox" name="" class="mgl20" id="foreigner_information_textarea_contants_consent"> <label for="foreigner_information_textarea_contants_consent">I agree with the Service Terms.</label></p>
+					</div>
+				</div>
+				<!-- // 외국인 개인정보 수집 및 이용 동의 -->
+				<div class="sign_up_btn_area foreigner_sign_up_btn_area hidden">
+					<button class="red_btn" onClick="foreigner_alert();">Agree</button>
+					<button class="blk_btn">Reject</button>
+				</div>
+			</div>	
+		</div>
+		<!-- // section -->
+	</div>
+	<!-- // contents -->
+	<!-- footer -->
+	<div id="footer" class="login_footer">
+		<div class="companyinfo_group">
+			<ul class="companyinfo_menu">
+				<li><a href="/ex/html/company/company_about.html">회사소개</a></li>
+				<li><a href="/ex/html/company/company_policy.html">개인정보취급방침</a></li>
+				<li><a href="/ex/html/member/sign_up_individual.html">이용약관</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_faq.html">고객센터</a></li>
+				<li><a href="/ex/html/company/company_partner.html">제휴및입점안내</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_find_idpw.html">아이디&#47;비밀번호찾기</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_user_guide.html">이용안내</a></li>
+				<li><a href="/ex/html/company/company_sitemap.html">사이트맵</a></li>
+			</ul>
+			<div class="companyinfo_copy">
+				<p class="companyinfo_copy">COPYRIGHT &#169; MOBILELOUNGE&#46;CO&#46;KR ALL RIGHT RESERVED</p>
+				<div class="companyinfo_logo"><img src="/images/footer/footer_logo01.gif" alt="mobile lounge" /></div>
+				<div class="companyinfo_addr">
+					주소 : 서울특별시 도봉구 방학로 102 (방학동) 성수빌딩 3층 &#124; 사업자등록번호 : 210-81-69605 <br />
+					통신판매업신고번호 : 제 2012-서울도봉-0322호 &#124; 개인정보관리자 : 김정호 &#124; 대표 : 김현식 &#124; 상호명 : 주식회사 모바일라운지<br />
+					전화번호 : 1899-0773 &#47; 02-3491-5757 &#124; 팩스번호 : 02-3494-4898 | 메일 : help@widcase.com 
+				</div>
+				<div class="companyinfo_selectshop"><img src="/images/footer/footer_selectshop01.gif" alt="select shop" /></div>
+				<a href="#header" id="page-bottom" data-scroll="" class="companyinfo_top_btn"><img src="/images/btn/btn_gotop01.gif" alt="맨위로 가기" /></a>
+			</div>
+		</div>
+	</div>
+	<!-- // footer -->
+</body>
+</html>

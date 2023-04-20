@@ -1,0 +1,273 @@
+@charset "utf-8";
+.hidden{
+    display: none !important;
+}
+@media screen and (min-width: 1170px) {
+    #wrap{
+        display:block;
+    }
+    #wrapM{
+        display:none;
+    }
+    .con{
+        width:100%;
+    }
+    .con_center{
+        position: relative;
+        overflow: hidden;
+        width: 1090px;
+        height: inherit;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .con01{
+        height:1006px;
+        background:url(../images/collaboration/web/bg01.jpg) no-repeat center top;
+    }
+    .con01 .btn_twitter{
+        position: absolute;
+        top:20px;
+        right:0;
+    }
+    .con02{
+        height:1121px;
+        background:url(../images/collaboration/web/bg02.jpg) no-repeat center top;
+    }
+    .con02 .tit_character{
+        display: block;
+        margin:176px 0 20px;
+        padding-left: 50px;
+    }
+    .con02 .char_slide{
+        position: relative;
+        overflow: hidden;
+        width:922px;
+        height:654px;
+        margin:0 auto;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        position: absolute;
+        top: 440px;
+        width: 52px;
+        height: 180px;
+        z-index: 10;
+        cursor: pointer;
+        -moz-background-size: 27px 44px;
+        -webkit-background-size: 27px 44px;
+        background-size: 27px 44px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        cursor: auto;
+        pointer-events: none;
+    }
+    .swiper-button-next{
+        right:0;
+        background:url(../images/collaboration/web/btn_right.png) no-repeat center top;
+    }
+    .swiper-button-prev{
+        left:0;
+        background:url(../images/collaboration/web/btn_left.png) no-repeat center top;
+    }
+    .swiper-button-next:hover{
+        right:0;
+        background:url(../images/collaboration/web/btn_right_on.png) no-repeat center top;
+    }
+    .swiper-button-prev:hover{
+        left:0;
+        background:url(../images/collaboration/web/btn_left_on.png) no-repeat center top;
+    }
+    .con02 .char_slide .swiper-pagination{
+        position: absolute;
+        bottom:0;
+        width: 100%;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet{
+        display:inline-block;
+        width:108px;
+        height:109px;
+        background:#051225;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin:0 11px;
+        border-radius: 0;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1){
+        background:url(../images/collaboration/web/btn_cha01.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2){
+        background:url(../images/collaboration/web/btn_cha02.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3){
+        background:url(../images/collaboration/web/btn_cha03.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4){
+        background:url(../images/collaboration/web/btn_cha04.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5){
+        background:url(../images/collaboration/web/btn_cha05.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(1).swiper-pagination-bullet-active{
+        background:url(../images/collaboration/web/btn_cha01_on.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(2).swiper-pagination-bullet-active{
+        background:url(../images/collaboration/web/btn_cha02_on.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(3).swiper-pagination-bullet-active{
+        background:url(../images/collaboration/web/btn_cha03_on.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(4).swiper-pagination-bullet-active{
+        background:url(../images/collaboration/web/btn_cha04_on.png);
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet:nth-child(5).swiper-pagination-bullet-active{
+        background:url(../images/collaboration/web/btn_cha05_on.png);
+    }
+    .con03{
+        height:1001px;
+        background:url(../images/collaboration/web/bg03.jpg) no-repeat center top;
+    }
+    .con03 .btn_tartaros{
+        position: absolute;
+        display: inline-block;
+        top: 526px;
+        left: 62px;
+        width:440px;
+        height:72px;
+        background:url(../images/collaboration/web/btn_tarta.png) no-repeat 0 0;
+    }
+    .con03 .btn_tartaros:hover{
+        background:url(../images/collaboration/web/btn_tarta_on.png) no-repeat 0 0;
+    }
+    .con04{
+        height:1000px;
+        background:url(../images/collaboration/web/bg04.jpg) no-repeat center top;
+    }
+    .con04 .btn_group{
+        position: absolute;
+        top:730px;
+        right: 48px;
+    }
+    .con04 .btn_group .btn_ggl{
+        margin-left:14px;
+    }
+    .con05{
+        height:555px;
+        background:url(../images/collaboration/web/bg05.jpg) no-repeat center top;
+    }
+    .con05 .btn_fantasy{
+        position: absolute;
+        display: inline-block;
+        top: 305px;
+        left: 260px;
+        width:570px;
+        height:72px;
+        background:url(../images/collaboration/web/btn_fantasy.png) no-repeat 0 0;
+    }
+    .con05 .btn_fantasy:hover{
+        background:url(../images/collaboration/web/btn_fantasy_on.png) no-repeat 0 0;
+    }
+}
+@media screen and (min-width: 1px) and (max-width: 1169px) {
+    #wrap{
+        display:none;
+    }
+    #wrapM{
+        overflow: hidden;
+        display:block;
+    }
+    .con{
+        position: relative;
+        width:100%;
+    }    
+    .con > img{
+        width:100%;
+    }   
+    .con01 .btn_twitter{
+        display: inline-block;
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        width: 22%;
+    } 
+    .con01 .btn_twitter img{
+        width:100%;
+    }
+    .con02 .swiper-slide img{
+        width:96%;
+    }
+    .con02 .swiper-container{
+        position: absolute;
+        width:100%;
+        top:23%;
+    }
+    .con02 .char_slide .swiper-pagination{
+        position: absolute;
+        bottom: -13%;
+        width: 100%;
+        padding: 0 3%;
+        box-sizing: border-box;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet{
+        display:inline-block;
+        width:18%;
+        background:#051225;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet img{
+        width:100%;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+        margin:0 1%;
+        border-radius: 0;
+    }
+    .con .btn_link img{
+        width:100%;
+    }
+    .con03 .btn_link{
+        position: absolute;
+        display:block;
+        bottom:16%;
+        left:10%;
+        width:80%;
+    }
+    .con04 .btn_group{
+        position: absolute;
+        display:block;
+        bottom: 7.5%;
+        width:100%;
+        padding: 0 8%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .con04 .btn_group_mo{
+        position: absolute;
+        display:block;
+        bottom: 6.5%;
+        width:100%;
+        padding: 0 8%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .con04 .btn_group a{
+        display: inline-block;
+        width: 47.5%;
+        margin: 0 auto;
+        text-align: center
+    }
+    .con04 .btn_group a + a{
+        margin-left:3%;
+    }
+    .con04 .btn_group a img{
+        width:100%;
+    }
+    .con04 .btn_group_mo a img{
+        width:60%;
+    }
+    .con05 .btn_link{
+        position: absolute;
+        display:block;
+        bottom:45.5%;
+        left:3%;
+        width:94%;
+    }
+}

@@ -1,0 +1,5 @@
+@charset "utf-8";
+nav ul.gnb_open > li{
+	display:inline;
+	border:1px solid red;
+}

@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>모바일 라운지 케이스</title>
+<link rel="shortcut icon" href="/ex/images/ico/mobilelounge.ico"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/font.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/style_back.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/global.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/slide_aside.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/slide_eventsale.css" />
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="/common/js/common.js" type="text/javascript"></script>
+<script src="/common/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="/common/js/commonUIComponent.js"></script>
+<script src="/common/js/bjqs-1.3.min.js"></script>
+<script src="/common/js/jquery.glide.min.js"></script>
+<script src="/common/js/popup.js"></script>
+<script type="text/javascript" src="/common/js/smooth-scroll.js"></script>
+<!-- jquery 가격 슬라이더 -->
+<link rel="stylesheet" type="text/css" href="/common/css/jslider.css" />
+<script type="text/javascript" src="/common/js/slider/jshashtable-2.1_src.js"></script>
+<script type="text/javascript" src="/common/js/slider/jquery.numberformatter-1.2.3.js"></script>
+<script type="text/javascript" src="/common/js/slider/tmpl.js"></script>
+<script type="text/javascript" src="/common/js/slider/jquery.dependClass-0.1.js"></script>
+<script type="text/javascript" src="/common/js/slider/draggable-0.1.js"></script>
+<script type="text/javascript" src="/common/js/slider/jquery.slider.js"></script>
+<!-- // jquery 가격 슬라이더 -->
+</head>
+<body>
+	<!-- top_menu -->
+	<div id="top_menu">
+		<div id="header">
+			<a href="/ex/html/index.html"  class="header_logo"><img src="/images/btn/btn_logo01_off.gif" alt="Mobilelounge" /></a>
+			<a href="#" class="header_bookmark"><img src="/images/btn/btn_bookmark01_off.gif" alt="Mobilelounge_Bookmark" /></a>
+			<ul class="header_menu header_menu_txt">
+				<li><a href="/ex/html/member/login.html">로그인</a></li>
+				<li><a href="/ex/html/member/sign_up_individual.html">회원가입</a></li>
+				<li><a href="/ex/html/cart/cart_step01.html">장바구니</a></li>
+				<li><a href="/ex/html/mypage/mypage_shoping_admin.html">마이페이지</a></li>
+				<li><a href="/ex/html/mypage/mypage_delivery_find.html">주문/배송</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_faq.html">고객센터</a></li>
+			</ul>
+			<ul class="header_menu header_menu_img hidden">
+				<li>
+					<a href="/ex/html/member/login.html"><img src="/images/btn/btn_lock01_off.gif" alt="로그인" /></a>
+					<p class="header_menu_login">로그인</p>
+				</li>
+				<li>
+					<a href="/ex/html/member/sign_up_individual.html"><img src="/images/btn/btn_people01_off.gif" alt="회원가입" /></a>
+					<p class="header_menu_member_join">회원가입</p>
+				</li>
+				<li>
+					<a href="/ex/html/cart/cart_step01.html"><img src="/images/btn/btn_cart01_off.gif" alt="장바구니" /></a>
+					<p class="header_menu_cart">장바구니</p>
+				</li>
+				<li>
+					<a href="/ex/html/mypage/mypage_shoping_admin.html"><img src="/images/btn/btn_mymenu01_off.gif" alt="마이페이지" /></a>
+					<p class="header_menu_mypage">마이페이지</p>
+				</li>
+				<li>
+					<a href="/ex/html/mypage/mypage_delivery_find.html"><img src="/images/btn/btn_car01_off.gif" alt="주문/배송" /></a>
+					<p class="header_menu_order">주문&#47;배송</p>
+				</li>
+				<li>
+					<a href="/ex/html/cscenter/cscenter_faq.html"><img src="/images/btn/btn_phone01_off.gif" alt="고객센터" /></a>
+					<p class="header_menu_cscenter">고객센터</p>
+				</li>
+			</ul>
+			<h1><a href="/ex/html/index.html"><img src="/images/main/img_main_logo.gif" alt="Mobilelounge accessories" /></a></h1>
+		</div>
+		<div id="nav" class="nav_top_bg">
+			<h2 class="hidden">모바일라운지 상품별 메뉴</h2>
+			<div>
+				<div class="nav_over_left"></div>
+				<div class="nav_over_right"></div>
+				<!-- ul.gnb -->
+				<ul class="gnb">
+					<li><a href="/ex/html/category01/category01_case.html" class="gnb_case">CASE</a></li>
+					<li><a href="/ex/html/category01/category01_film.html" class="gnb_film">FILM</a></li>
+					<li><a href="/ex/html/category01/category01_mobile_acc.html" class="gnb_acc">MOBILE-ACC</a></li>
+					<li><a href="/ex/html/category01/category01_audio.html" class="gnb_audio">AUDIO</a></li>
+					<li><a href="/ex/html/category01/category01_fashion.html" class="gnb_fashion">FASHION</a></li>
+					<li><a href="/ex/html/category01/category01_brand.html" class="gnb_brand">BRAND</a></li>
+					<li class="new"><a href="/ex/html/category01/category01_new.html">New</a></li>
+					<li><a href="/ex/html/category01/category01_best.html">Best</a></li>
+					<li class="oneday"><a href="/ex/html/category01/category01_oneday.html">Oneday</a></li>
+				</ul>
+				<fieldset class="global_search_group">
+					<legend>상품 검색</legend>
+					<input type="text" name="" id="global_search" class="global_search" value="Search here" maxlength="15" size="20" /> 
+					<button class="btn_product_search"></button>
+				</fieldset>
+				<!-- // ul.gnb -->
+			</div>
+			<!-- ul.gnb_case -->
+			<ul class="gnb_open gnb_open_case">
+				<li>
+					<!-- 삼성 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_samsung01_note3.html">삼성 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_samsung01_note3.html">갤럭시노트3</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung02_s4.html">갤럭시S4 </a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung03_s3.html">갤럭시S3 </a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung04_note2.html">갤럭시노트2</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung05_note.html">갤럭시노트</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_samsung06_etc.html">기타 갤럭시 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_apple.html">애플 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_apple01_phone5s.html">아이폰 5&#47;5s</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple02_phone5c.html">아이폰 5C</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple03_phone4s.html">아이폰 4&#47;4S</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple04_pad.html">아이패드</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_apple05_etc.html">기타 아이폰 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>				
+					<!-- 스카이 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_lg.html">엘지 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_lg01_opview.html">옵티머스 뷰</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_lg02_opg2.html">옵티머스 G2</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_lg03_opgpro.html">옵티머스 G프로</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_lg04_etc.html">기타 옵티머스 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 스카이 케이스 -->
+					<dl>
+						<dt><a href="/ex/html/category02/case/category02_case_sky.html">스카이 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_sky01_vegar3.html">베가R3</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky02_vegars5.html">베가S5</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky03_vegarsracer.html">베가레이서</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky04_vegasecretnote.html">베가시크릿노트</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_sky05_etc.html">기타 베가 케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="gnb_open_half">
+						<!-- 그외 케이스 -->
+						<dt><a href="/ex/html/category02/case/category02_case_etc.html">그외 케이스</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/case/category02_case_etc01_old.html">구기종 케이스 모음</a></li>
+								<li><a href="/ex/html/category02/case/category02_case_etc02_character.html">캐릭터 케이스 모음</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+						<!-- 인기 브랜드 -->
+						<dt><a href="#">인기 브랜드</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">모바일라운지</a></li>
+								<li><a href="#">머큐리</a></li>
+								<li><a href="#">세븐밀리</a></li>
+								<li><a href="#">라미엔느</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+					</dl>
+					<!-- 아이템 -->
+					<dl class="gnb_red_bullet bg_img_none">
+						<dt><a href="#">아이템</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">가죽케이스</a></li>
+								<li><a href="#">다이어리케이스</a></li>
+								<li><a href="#">플립케이스</a></li>
+								<li><a href="#">실리콘케이스</a></li>
+								<li><a href="#">하드케이스</a></li>
+								<li><a href="#">범퍼케이스</a></li>
+								<li><a href="#">소프트케이스</a></li>
+								<li><a href="#">젤리케이스</a></li>
+								<li><a href="#">백커버</a></li>
+								<li><a href="#">기타케이스</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<!-- // ul.gnb_case -->
+			<!-- ul.gnb_film -->
+			<ul class="gnb_open gnb_open_film">
+				<li>
+					<!-- 삼성 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_samsung01_note3.html">삼성 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_samsung01_note3.html">갤럭시노트3</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung02_s4.html">갤럭시S4</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung03_s3.html">갤럭시S3</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung04_note2.html">갤럭시노트2</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_samsung06_etc.html">기타 갤럭시 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_apple01_phone5s.html">애플 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_apple01_phone5s.html">아이폰 5&#47;5s</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple02_phone5c.html">아이폰 5C</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple03_phone4s.html">아이폰 4&#47;4S</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple04_pad.html">아이패드</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_apple05_etc.html">기타 아이폰 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_lg01_opview.html">엘지 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_lg01_opview.html">옵티머스 뷰</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_lg02_opg2.html">옵티머스 G2</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_lg03_opgpro.html">옵티머스 G프로</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_lg04_etc.html">기타 옵티머스 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 스카이 필름 -->
+					<dl>
+						<dt><a href="/ex/html/category02/film/category02_film_sky01_vegar3.html">스카이 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/film/category02_film_sky01_vegar3.html">베가R3</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky02_vegars5.html">베가S5</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky03_vegarsracer.html">베가레이서</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky04_vegasecretnote.html">베가시크릿노트</a></li>
+								<li><a href="/ex/html/category02/film/category02_film_sky05_etc.html">기타 베가 필릌</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="gnb_open_half">
+						<!-- 기타 필름 -->
+						<dt><a href="#">기타 필름</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">타블렛 필름</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+						<!-- 인기 브랜드 -->
+						<dt><a href="#">인기 브랜드</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">모바일라운지</a></li>
+								<li><a href="#">엠파이브</a></li>
+								<li><a href="#">텔루스</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+					</dl>
+					<!-- 필름/스킨 -->
+					<dl class="gnb_red_bullet">
+						<dt><a href="#">필름&#47;스킨</a></dt>
+						<dd>
+							<ul>
+								<li><a href="#">일반 액정보호 필름</a></li>
+								<li><a href="#">고투명 필름</a></li>
+								<li><a href="#">지문방지 필름</a></li>
+								<li><a href="#">방탄 필름</a></li>
+								<li><a href="#">미러스킨</a></li>
+								<li><a href="#">알루미늄스킨</a></li>
+								<li><a href="#">기타 액정보호 필름</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<!-- // ul.gnb_film -->
+			<!-- ul.gnb_acc -->
+			<ul class="gnb_open gnb_open_acc">
+				<li>
+					<!-- 충전기/젠더 -->
+					<dl>
+						<dt><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender01_car.html">충전기&#47;젠더</a></dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender01_car.html">차량용 충전기</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender02_home.html">가정용 충전기</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender03_cable.html">데이터 케이블</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender04_gender.html">충전젠더</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender05_battery.html">보조배터리</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 애플 필름 -->
+					<dl>
+						<dt>기타 액세서리</dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc01_pen.html">터치펜</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc02_plug.html">이어마개</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc03_etc.html">기타</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="gnb_open_half">
+						<!-- 기타 필름 -->
+						<dt>기타 필름</dt>
+						<dd>
+							<ul>
+								<li><a href="#">타블렛 필름</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+						<!-- 인기 브랜드 -->
+						<dt>인기 브랜드</dt>
+						<dd>
+							<ul>
+								<li><a href="#">헬로키티</a></li>
+								<li><a href="#">솔로젠</a></li>
+								<li><a href="#">머큐리</a></li>
+							</ul>
+							<a href="#">more ></a>
+						</dd>
+					</dl>
+					<!-- 모바일 주변기기 -->
+					<dl class="gnb_red_bullet">
+						<dt>모바일 주변기기</dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_chargergender01_car.html">충전기&#47;젠더</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_mountsmemory01_car.html">거치대&#47;메모리</a></li>
+								<li><a href="/ex/html/category02/mobile_acc/category02_mobile_acc_otheracc01_pen.html">기타 액세서리</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<!-- // ul.gnb_acc -->
+			<!-- ul.gnb_audio -->
+			<ul class="gnb_open gnb_open_audio">
+				<li>
+					<!-- 음향기기 -->
+					<dl class="gnb_red_bullet">
+						<dt>음향기기</dt>
+						<dd>
+							<ul>
+								<li><a href="/ex/html/category02/audio/category02_audio_bluetooth.html">블루투스</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_earphone.html">이어폰</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_headphone.html">헤드폰</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_speaker.html">스피커</a></li>
+								<li><a href="/ex/html/category02/audio/category02_audio_otheraudio.html">기타 음향기기</a></li>
+							</ul>
+						</dd>
+					</dl>
+					<!-- 음향기기 배너 -->
+					<ul class="gnb_open_img">
+						<li><a href="#"><img src="/images/common/img_gnb_audio01.jpg" alt="CX310" /></a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- // ul.gnb_audio -->
+		</div>
+	</div>
+	<!-- // top_menu -->
+	<!-- contents -->
+	<div id="contents">
+		<h2 class="hidden">모바일라운지 컨텐츠</h2>
+		<div id="aside">
+			<h3 class="hidden">우측 메뉴</h3>
+			<ul class="aside_menu">
+				<li class="event_aside_menu no_opacity"><img src="/images/btn/btn_right_event01_off.gif" alt="이벤트" /></li>
+				<li><a href="/ex/html/member/login.html"><img src="/images/btn/btn_lock02.gif" alt="로그인" /></a></li>
+				<li><a href="/ex/html/member/sign_up_individual.html"><img src="/images/btn/btn_people02.gif" alt="회원가입" /></a></li>
+				<li><a href="/ex/html/cart/cart_step01.html"><img src="/images/btn/btn_cart02.gif" alt="장바구니" /></a></li>
+				<li><a href="/ex/html/mypage/mypage_shoping_admin.html"><img src="/images/btn/btn_mymenu02.gif" alt="마이페이지" /></a></li>
+				<li><a href="/ex/html/cart/cart_step03.html"><img src="/images/btn/btn_car02.gif" alt="주문/배송" /></a></li>
+				<li><a href="/ex/html/cscenter/cscenter_faq.html"><img src="/images/btn/btn_phone02.gif" alt="고객센터" /></a></li>
+				<li class="last_aside_menu no_opacity"><a href="#"><img src="/images/btn/btn_balloon01_off.gif" alt="메신저" /></a></li>
+				<li class="look_product_txt no_opacity">최근<br />본상품</li>
+				<li class="look_product_img no_opacity"><a href="#"></a></li>
+				<li class="look_product_img no_opacity"><a href="#"></a></li>
+				<li class="look_product_page"><button class="look_product_prev"></button>56&#47;56<button class="look_product_next"></button></li>
+			</ul>
+			<div class="event_aside">
+				<h4>이벤트</h4>
+				<button class="aside_event_close_btn01"></button>
+				<div id="banner-fade">
+					<ul class="bjqs">
+					<li><a href="#"><img src="/images/common/img_hotfocus01.jpg" title="이벤트"></a></li>
+					<li><a href="/ex/html/mpoint/mpoint_gift.html"><img src="/images/common/img_hotfocus02.jpg" title="이벤트"></a></li>
+					<li><a href="/ex/html/mpoint/mpoint_victory.html"><img src="/images/common/img_hotfocus03.jpg" title="이벤트"></a></li>
+					</ul>
+				</div>
+				<div class="aside_event_benner"><a href="#"><img src="/images/common/notice.jpg" alt="3만원 이상! 무료배송 EVENT" /></a></div>
+				<p class="today_close_txt"><button class="aside_event_close_btn02"></button>오늘은 그만보기</p>
+			</div>
+		</div>
+		<!-- section -->
+		<div id="section">
+			<!-- category_header -->
+			<div class="category_header">
+				<ul class="category_header_select_group">
+					<li><a href="#" class="select_home_btn">HOME</a></li>
+					<li>
+						<a href="#" class="select_open_btn select_open_btn01">선택하세요</a>
+						<ul class="category_header_select category_header_select01 hidden">
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="select_open_btn select_open_btn02">선택하세요</a>
+						<ul class="category_header_select category_header_select02 hidden">
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+							<!-- 셀렉트 카테고리 -->
+							<li>
+								<a href="#">케이스</a>
+								<input type="hidden" id="hiddenParameter" value="">
+							</li>
+							<!-- // 셀렉트 카테고리 -->
+						</ul>
+					</li>
+				</ul>
+				<a href="#" class="prev_page_go">이전 페이지가기</a>
+			</div>
+			<!-- // category_header -->
+			<div class="category_gnb">
+				<h3><span class="h3_txt_eng">CASE</span><span class="h3_txt_han">케이스 &#47; 삼성</span></h3>
+				<ul class="category_gnb_list">
+					<li class="category_gnb_list_tab01 category_gnb_list_current"><a href="/ex/html/category02/case/category02_case_samsung01_note3.html">삼성</a></li>
+					<li class="category_gnb_list_tab02"><a href="/ex/html/category02/case/category02_case_apple01_phone5s.html">애플</a></li>
+					<li class="category_gnb_list_tab03"><a href="/ex/html/category02/case/category02_case_lg01_opview.html">엘지</a></li>
+					<li class="category_gnb_list_tab04"><a href="/ex/html/category02/case/category02_case_sky01_vegar3.html">스카이</a></li>
+					<li class="category_gnb_list_tab05"><a href="/ex/html/category02/case/category02_case_etc01_old.html">그외기종</a></li>
+				</ul>
+				<ul class="category_gnb_list_depth">
+					<li><a href="/ex/html/category02/case/category02_case_samsung01_note3.html">갤럭시노트3</a></li>
+					<li><a href="/ex/html/category02/case/category02_case_samsung02_s4.html">갤럭시S4</a></li>
+					<li><a href="/ex/html/category02/case/category02_case_samsung03_s3.html">갤럭시S3</a></li>
+					<li class="category_gnb_list_current_depth category_gnb_list_depth_on"><a href="/ex/html/category02/case/category02_case_samsung04_note2.html">갤럭시노트2</a></li>
+					<li><a href="/ex/html/category02/case/category02_case_samsung05_note.html">갤럭시노트</a></li>
+					<li><a href="/ex/html/category02/case/category02_case_samsung06_etc.html">기타 갤럭시 케이스</a></li>
+				</ul>
+			</div>
+			<div class="category_select_tab">
+				<h4>케이스 &#47; 삼성</h4>
+				<ul class="category_select_tab_list">
+					<li class="tab_list_diary tab_list_on"><span>다이어리</span></li>
+					<li class="tab_list_flip"><span>플립케이스</span></li>
+					<li class="tab_list_silicon"><span>실리콘케이스</span></li>
+					<li class="tab_list_hard"><span>하드케이스</span></li>
+					<li class="tab_list_bumper"><span>범퍼케이스</span></li>
+					<li class="tab_list_leather"><span>가죽케이스</span></li>
+					<li class="tab_list_jelly"><span>젤리케이스</span></li>
+					<li class="tab_list_backcover"><span>백커버</span></li>
+					<li class="tab_list_etc"><span>기타 케이스</span></li>
+				</ul>
+				<!--<ul class="category_select_tab_list">
+					<li class="tab_list_etc"><span>기타 케이스</span></li>
+				</ul>-->
+				<div class="category_order_list">
+					<ul>
+						<li class="category_order_list_on">최근상품순</li>
+						<li>인기상품순</li>
+						<li>할인율높은순</li>
+						<li>낮은가격순</li>
+						<li>높은가격순</li>
+						<li>브랜드순</li>
+					</ul>
+					<div class="category_order_select">
+						<button class="category_search_option visible"></button>
+						<select name="">
+							<option>20개씩 정렬</option>
+							<option>20개씩 정렬</option>
+							<option>20개씩 정렬</option>
+							<option>20개씩 정렬</option>
+							<option>20개씩 정렬</option>
+						</select>
+						<ul>
+							<li class="category_view_btn_thum"><img src="/images/btn/btn_view_thum01_on.gif" alt="썸네일 정렬로 보기" /></li>
+							<li class="category_view_btn_list"><img src="/images/btn/btn_view_list01_off.gif" alt="목록으로 보기" /></li>
+							<!-- 벽돌정렬 오픈 후 추가
+							<li><img src="/images/btn/btn_view_masonry01_off.gif" alt="벽돌 정렬로 보기" /></li> 
+							-->
+						</ul>
+					</div>
+				</div>
+				<div class="category_price_search" style="display: none;">
+					<div class="layout-slider">
+						<input id="Slider2" type="slider" name="price" value="5000;50000" />
+					</div>
+					<script type="text/javascript" charset="utf-8">
+						jQuery("#Slider2").slider({ from: 0, to: 150000, heterogeneity: ['50/50000'], step: 1000, dimension: '&nbsp;원' });
+					</script>
+					<div class="category_price_search_btn">
+						<select name="">
+							<option>전체 아이템</option>
+							<option>전체 아이템</option>
+							<option>전체 아이템</option>
+							<option>전체 아이템</option>
+						</select>
+						<input type="text" name="">
+						<button class="result_search_btn">결과 내 검색</button>
+					</div>
+					<div class="category_price_input">
+						<img src="/images/ico/ico_price01.gif" alt="원" />
+						<input type="text" name="">
+						<img src="/images/ico/ico_price_range01.gif" alt="가격 범위" />
+						<input type="text" name="">
+						<button class="result_search_btn">결과</button>
+					</div>
+					<button class="category_price_search_close"></button>
+				</div>
+				<div class="category_search_list hidden">
+					<p class="category_list_path"><a href="#" class="category_list_path_bold">모바일악세사리</a> &#62; <a href="#">거치대&#47;메모리</a> &#62; <a href="#">차량용거치대</a></p>
+					<p class="category_list_search_text">총 <span>89</span>개의 검색결과가 있습니다.</p>
+					<!-- 섬네일 형식 -->
+					<ul class="product_list category_list_search_thum">
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+						<!-- 상품 -->
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<!-- // 상품 -->
+					</ul>
+					<!-- // 섬네일 형식 -->
+					<!-- 리스트 형식 -->
+					<ul class="product_list category_list_search_list">
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+						<li>
+							<ul class="product_list_txt">
+								<li class="txt_sale"></li>
+								<li class="txt_new"></li>
+							</ul>
+							<a href="#"><img src="/images/category/category_sample01.gif" alt="상품 이미지" /></a>
+							<p class="product_list_tit"><a href="#">토르도트케이스</a></p>
+							<p class="product_list_ver">GALAXY S5 (G900)</p>
+							<p class="product_list_pri"><img src="/images/ico/ico_price02.png" alt="원" /> 22,800</p>
+						</li>
+					</ul>
+					<!-- // 리스트 형식 -->
+					<div class="paginate_complex mgt20 mgb20">
+						<a href="#" class="direction prev"><span></span><span></span> 처음</a>
+						<a href="#" class="direction prev"><span></span> 이전</a>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<strong>5</strong>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#" class="direction next">다음 <span></span></a>
+						<a href="#" class="direction next">끝 <span></span><span></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // section -->
+	</div>
+	<!-- // contents -->
+	<!-- footer -->
+	<div id="footer" class="mgt30">
+		<h2 class="hidden">모바일라운지 정보</h2>
+		<div class="notice_group">
+			<div class="notice">
+				<h3>NOTICE</h3>
+				<ul>
+					<li><a href="#">&#91;공지&#93; 공지내용공지내용공지내용공지내용공지내용</a></li>
+					<li><a href="#">&#91;공지&#93; 공지내용공지내용공지내용공지내용공지내용</a></li>
+					<li><a href="#">&#91;공지&#93; 공지내용공지내용공지내용공지내용공지내용</a></li>
+				</ul>
+			</div>
+			<div class="cs">
+				<h3>CS</h3>
+				<div>
+					<h4>TEL&nbsp;&nbsp;02-3494-1255</h4>
+					<ul>
+						<li><span>평일</span>AM 10&#58;00 &#126; PM 6&#58;00</li>
+						<li><span>토요일</span>AM 10&#58;00 &#126; PM 2&#58;00</li>
+						<li><span>점심시간</span>PM 12&#58;00 &#126; PM 1&#58;00</li>
+						<li>법정공휴일 휴무</li>
+					</ul>
+				</div>
+				<div>
+					<h4>BANK</h4>
+					<dl>
+						<dt>입금계좌안내</dt>
+						<dd>우리은행 1005-4020-93836 &#40;주&#41;위드모바일</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="blog">
+				<h3>BLOG</h3>
+				<ul>
+					<!-- 1.목록 -->
+					<li>
+						<a href="#">
+							<dl>
+								<dt>목록1</dt>
+								<dd class="bloglist_img"><img src="/images/main/img_blog01.jpg" alt="BLOG" /></dd>
+								<dd class="bloglist_con">목록1목록1목록1목록1목록1목록1목록1목록1목록1목록1목록1목록1목록1</dd>
+							</dl>
+						</a>
+					</li>
+					<!-- // 1.목록 -->
+					<!-- 2.목록 -->
+					<li>
+						<a href="#">
+							<dl>
+								<dt>목록2</dt>
+								<dd class="bloglist_img"><img src="/images/main/img_blog01.jpg" alt="BLOG" /></dd>
+								<dd class="bloglist_con">목록1목록1목록1목록1목록1목록1목록1</dd>
+							</dl>
+						</a>
+					</li>
+					<!-- // 2.목록 -->
+					<!-- 3.목록 -->
+					<li>
+						<a href="#">
+							<dl>
+								<dt>목록3</dt>
+								<dd class="bloglist_img"><img src="/images/main/img_blog01.jpg" alt="BLOG" /></dd>
+								<dd class="bloglist_con">목록1목록1목록1목록1목록1목록1</dd>
+							</dl>
+						</a>
+					</li>
+					<!-- // 3.목록 -->
+				</ul>
+			</div>
+		</div>
+		<div class="quick_group">
+			<h3>Quick Q&#38;A</h3>
+			<ul>
+				<li>
+					<a href="#"><img src="/images/btn/btn_footer_cs_off.gif" alt="고객센터" /></a>
+					<p>고객센터</p>
+				</li>
+				<li>
+					<a href="#"><img src="/images/btn/btn_footer_member_off.gif" alt="회원관련" /></a>
+					<p>회원관련</p>
+				</li>
+				<li>
+					<a href="#"><img src="/images/btn/btn_footer_card_off.gif" alt="결제관련" /></a>
+					<p>결제관련</p>
+				</li>
+				<li>
+					<a href="#"><img src="/images/btn/btn_footer_car_off.gif" alt="반송/배송 관련" /></a>
+					<p>반송&#47;배송 관련</p>
+				</li>
+				<li>
+					<a href="#"><img src="/images/btn/btn_footer_inquiry_off.gif" alt="1:1 문의" /></a>
+					<p>고객센터</p>
+				</li>
+			</ul>
+		</div>
+		<div class="companyinfo_group">
+			<ul class="companyinfo_menu">
+				<li><a href="/ex/html/company/company_about.html">회사소개</a></li>
+				<li><a href="/ex/html/company/company_policy.html">개인정보취급방침</a></li>
+				<li><a href="/ex/html/member/sign_up_individual.html">이용약관</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_faq.html">고객센터</a></li>
+				<li><a href="/ex/html/company/company_partner.html">제휴및입점안내</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_find_idpw.html">아이디&#47;비밀번호찾기</a></li>
+				<li><a href="/ex/html/cscenter/cscenter_user_guide.html">이용안내</a></li>
+				<li><a href="/ex/html/company/company_sitemap.html">사이트맵</a></li>
+			</ul>
+			<div class="companyinfo_copy">
+				<p class="companyinfo_copy">COPYRIGHT &#169; MOBILELOUNGE&#46;CO&#46;KR ALL RIGHT RESERVED</p>
+				<div class="companyinfo_logo"><img src="/images/footer/footer_logo01.gif" alt="mobile lounge" /></div>
+				<div class="companyinfo_addr">
+					주소 : 서울특별시 도봉구 방학로 102 (방학동) 성수빌딩 3층 &#124; 사업자등록번호 : 210-81-69605 <br />
+					통신판매업신고번호 : 제 2012-서울도봉-0322호 &#124; 개인정보관리자 : 김정호 &#124; 대표 : 김현식 &#124; 상호명 : 주식회사 위드모바일<br />
+					전화번호 : 1899-0773 &#47; 02-3491-5757 &#124; 팩스번호 : 02-3494-4898 | 메일 : help@widcase.com 
+				</div>
+				<div class="companyinfo_selectshop"><img src="/images/footer/footer_selectshop01.gif" alt="select shop" /></div>
+				<a href="#header" id="page-bottom" data-scroll="" class="companyinfo_top_btn"><img src="/images/btn/btn_gotop01.gif" alt="맨위로 가기" /></a>
+			</div>
+		</div>
+	</div>
+	<!-- // footer -->
+</body>
+</html>

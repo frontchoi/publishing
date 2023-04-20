@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : 최순철
+Create date : 2019-05-10
+-------------------------------------------------*/
+@font-face {
+     font-family:'NotoSansKR';
+     font-style: normal;
+     font-weight: 300;
+     src: url('../fonts/NotoSansCJKkr-DemiLight.eot');
+     src: local("?"),
+          url('../fonts/NotoSansCJKkr-DemiLight.woff') format('woff'),
+          url('../fonts/NotoSansCJKkr-DemiLight.otf') format('opentype');
+}
+
+@font-face {
+     font-family:'NotoSansKR';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/NotoSansCJKkr-Regular.eot');
+     src: local("?"),
+          url('../fonts/NotoSansCJKkr-Regular.woff') format('woff'),
+          url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+@font-face {
+     font-family:'NotoSansKR';
+     font-style: normal;
+     font-weight: 500;
+     src: url('../fonts/NotoSansCJKkr-Medium.eot');
+     src: local("?"),
+          url('../fonts/NotoSansCJKkr-Medium.woff') format('woff'),
+          url('../fonts/NotoSansCJKkr-Medium.ttf') format('truetype');
+}
+
+@font-face {
+     font-family:'NotoSansKR';
+     font-style: normal;
+     font-weight: 700;
+     src: url('../fonts/NotoSansCJKkr-Bold.eot');
+     src: local("?"),
+          url('../fonts/NotoSansCJKkr-Bold.woff') format('woff'),
+          url('../fonts/NotoSansCJKkr-Bold.ttf') format('truetype');
+}
+
+html{font-size:10px;box-sizing:border-box; -ms-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none;}
+*,*:before,*:after{box-sizing:border-box;}
+body {margin:0; padding:0; font-size:1.6rem; font-family: 'NotoSansKR', sans-serif; line-height:1.25; color:#333;}
+ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style: none;}
+p,h1,h2,h3,h4,h5,h6{margin:0; padding:0;}
+a {color:inherit; text-decoration:none;}
+img {border: 0;	vertical-align:middle; font-size:0;}
+table{border-collapse:collapse; border-spacing:0; width:100%;}
+caption,legend{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+select, input, textarea{color: #454545; font-size: 1.6rem;}
+select, input {vertical-align: middle;}
+b, strong{font-weight:700;}
+address,em,i{font-style:normal;}
+button{border:0; background:none; cursor:pointer;}
+hr{margin: 0; border: none; padding: 0; display:block;}
+figure, figcaption{padding:0; margin:0; display:block;}
+fieldset{border: none; padding: 0; margin: 0;}
+input[type="submit"] {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+header, footer, article, section, aside, nav, main {display: block;}
+button,input,optgroup,select,textarea { font-family: inherit; font-size: inherit; font-weight:inherit; margin: 0;}
+input{font-family:inherit; font-weight: 300;}
+[lang="en"] {font-family: 'Roboto', sans-serif;}
+
+.hidden {display:none !important}
+

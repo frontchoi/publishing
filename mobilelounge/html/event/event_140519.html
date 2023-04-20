@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>모바일 라운지 이벤트</title>
+<link rel="shortcut icon" href="/ex/images/ico/mobilelounge.ico"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" />
+<link rel="stylesheet" type="text/css" href="/ex/common/css/font.css" />
+<link rel="stylesheet" type="text/css" href="/ex/common/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="/ex/common/css/global.css" />
+<style type="text/css">
+.hidden {display:none;}
+.right_txt {text-align:right;}
+button {font-family:NanumGothic;}
+input[type="text"].right_txt {text-align:right;}
+
+#event_wrap {
+	width:1000px;
+	font-family:NanumGothic;
+}
+#event_wrap ul.event_wrap_tab{
+	overflow:hidden;
+}
+#event_wrap ul.event_wrap_tab > li{
+	float:left;
+	background:url(../../images/event/140519/bg_event_wrap_tab01.gif);
+	border-bottom:1px solid #a16b00;
+}
+#event_wrap ul.event_wrap_tab li h2{
+	background-color:#f5ce81;
+	width:100%;
+	height:34px;
+	text-align:center;
+	line-height:34px;
+	color:#9b4d00;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab01{
+	width:450px;
+	margin-right:5px;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02{
+	width:545px;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02 > div{
+	border-bottom: 1px solid #f5ce81;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02 table{
+	width:470px;
+	margin:25px 0 87px 35px;
+	border:1px solid #f5ce81;
+	text-align:center;
+	font-size:13px;
+	background:#fff;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02 table caption{
+	background:#f5ce81;
+	padding:3px 0;
+	color:#676767;
+	font-size:12px;
+	font-weight:bold;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02 table th{
+	padding:3px 0;
+	color:#676767;
+	border-left:1px solid #f5ce81;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02 table td{
+	padding:3px 0;
+	border-top:1px solid #f5ce81;
+	border-left:1px solid #f5ce81;
+}
+#event_wrap ul.event_wrap_tab li.event_wrap_tab02 table td span.txt_emoney{
+	color:#999;
+	font-size:12px;
+}
+#event_wrap ul.event_wrap_tab li ol{
+	height: 485px;
+	border-bottom:1px solid #f5ce81;
+}
+#event_wrap ul.event_wrap_tab li ol li{
+	color:#212121;
+	text-align:center;
+	font-size:14px;
+	line-height:24px;
+}
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_01{
+	padding:20px 0 10px;
+}
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_input{
+	padding:8px 0 25px;
+}
+#event_wrap ul.event_wrap_tab li ol li input[type="text"]{
+	width:244px;
+	height:20px;
+	border:1px solid #a9a9a9;
+}
+#event_wrap ul.event_wrap_tab li ol li button.btn_copy01{
+	font-size:11px;
+	width:35px;
+	height: 24px;
+	line-height: 25px;
+	text-align:center;
+	border:1px solid #a9a9a9;
+}
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_02,
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_03,
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_04{
+	padding:0 0 40px;
+	background:transparent url(../../images/event/140519/bg_arrow01.png) no-repeat center bottom;
+}
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_03{
+	font-size:16px;
+	font-weight:bold;
+	color:#f00000;
+}
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_05{
+	padding-top:5px;
+}
+#event_wrap ul.event_wrap_tab li ol li.event_wrap_txt_06{
+	padding:14px 0 70px;
+	font-size:11px;
+	color:#f00000;
+}
+#event_wrap div.event_knowhow_tab{
+	width:100%;
+	text-align:center;
+}
+#event_wrap div.event_knowhow_tab h2{
+	margin-top:62px;
+}
+#event_wrap div.event_knowhow_tab ol{
+	overflow:hidden;
+	border-top:1px dashed #000;
+	width:711px;
+	margin:15px 0 0 148px;
+	padding-top:62px;
+}
+#event_wrap div.event_knowhow_tab ol li{
+	float:left;
+	width:150px;
+	height:152px;
+	margin-left:37px;
+	background:transparent url(../../images/event/140519/bg_knowhow_ol.gif) no-repeat 0 0;
+	cursor:pointer;
+}
+#event_wrap div.event_knowhow_tab ol li a{
+	display:block;
+	height: 100%;
+}
+#event_wrap div.event_knowhow_tab ol li span{
+	display:block;
+	font-size:20px;
+}
+#event_wrap div.event_knowhow_tab ol li span.knowhow_tit{
+	color:#986428;
+	padding:22px 0 8px;
+	font-size:20px;
+}
+#event_wrap div.event_knowhow_tab ol li span.knowhow_red_txt{
+	color:#f04c3e;
+	font-size:28px;
+	padding-bottom:5px;
+}
+#event_wrap div.event_knowhow_tab ol li span.knowhow_blk_txt{
+	color:#2d2d2d;
+	font-size:28px;
+}
+#event_wrap div.event_knowhow_contant01{
+	margin:40px 0;
+}
+#event_wrap div.event_knowhow_contant01 ol{
+
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01{
+	position:relative;
+	background:url(../../images/event/140519/bg_naver_name_card01.gif) no-repeat 0 34px;
+	width:777px;
+	height:530px;
+	margin-left:118px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 input[type="text"]{
+	position:absolute;
+	padding:0 5px;	
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 input[type="text"].event_knowhow_input_info{
+	top: 274px;
+	left: 155px;
+	width: 528px;
+	height: 19px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 input[type="text"].event_knowhow_input_explan{
+	top: 362px;
+	left: 155px;
+	width: 63px;
+	height: 19px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 input[type="text"].event_knowhow_input_url{
+	top: 362px;
+	left: 293px;
+	width: 390px;
+	height: 19px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 button{
+	position:absolute;
+	font-size:12px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 button.event_knowhow_input_info_btn{
+	width: 42px;
+	height: 23px;
+	top: 274px;
+	right: 31px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 button.event_knowhow_input_explan_btn{
+	width: 42px;
+	height: 23px;
+	top: 362px;
+	left: 239px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 button.event_knowhow_input_url_btn{
+	width: 42px;
+	height: 23px;
+	top: 362px;
+	left: 704px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_01 button.event_knowhow_contant01_01_btn{
+	bottom:40px;
+	left:358px;
+	width:156px;
+	height:56px;
+	background:#109b06;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02{
+	position:relative;
+	width:777px;
+	margin:0 0 40px 118px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_tab{
+	overflow:hidden;
+	width:100%;
+	margin-top: 20px;
+	border:1px solid #c7c7c7;
+	border-left:0 none;
+	background:#efefef;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_tab li{
+	float:left;
+	width:14.1%;
+	border-left:1px solid #c7c7c7;
+	height:47px;
+	line-height:47px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+	color:#676767;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li > p{
+	position:relative;
+	white-space:pre-line;
+	border:1px solid #dcdcdc;
+	padding:20px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li > p > button.copy_btn{
+	position:absolute;
+	top:20px;
+	right:20px;
+	background: #109b06;
+	color: #fff;
+	width:90px;
+	height: 25px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li ol.select_contants_btn_number{
+	overflow:hidden;	
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li ol.select_contants_btn_number li{
+	float:left;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li ol.select_contants_btn_number li button{
+	width:31px;
+	height:31px;
+	border:1px solid #dcdcdc;
+	background: #fff;
+	color:#109b06;
+	margin:10px 0 10px 5px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li ol.select_contants_btn_number li:first-child button{
+	margin-left:0;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_02 ul.event_knowhow_contant01_02_select_contants li ol.select_contants_btn_number li button.select_contants_btn_number_on{
+	border:1px solid #109b06;
+	background: #109b06;
+	color:#fff;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03{
+	position:relative;
+	overflow:hidden;
+	width:777px;
+	margin-left:118px;
+	line-height: 59px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 > h3{
+	float:left;
+	width:285px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 > img,
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 > a{
+	float:left;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 > a{
+	display:block;
+	font-size:11px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 > img{
+	margin: 20px 10px 0 0;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 dl.jisik_in_note{
+	clear:both;
+	background:url(../../images/event/140519/bg_naver_search01.gif) no-repeat 0 0;
+	padding:25px;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 dl.jisik_in_note dt{
+	width:267px;
+	height:40px;
+	line-height:40px;
+	padding-left:20px;
+	background:url(../../images/event/140519/bg_naver_search_txt01.gif) no-repeat 0 0;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 dl.jisik_in_note dt span{
+	color:#109a06;
+	font-weight:bold;
+}
+#event_wrap div.event_knowhow_contant01 ol li.event_knowhow_contant01_03 dl.jisik_in_note dd{
+	white-space:pre-line;
+	font-size: 13px;
+	line-height:25px;
+}
+#event_wrap div.event_knowhow_contant02{
+	position:relative;
+	margin:40px 0;
+	width:1000px;
+	height:900px;
+	background:url(../../images/event/140519/bg_event_cafe01.gif) no-repeat 0 -40px;
+}
+#event_wrap div.event_knowhow_contant02 > div{
+	position: absolute;
+	right: 118px;
+}
+#event_wrap div.event_knowhow_contant02 div.input_link_name{
+	bottom: 349px;
+}
+#event_wrap div.event_knowhow_contant02 div.input_link_url{
+	bottom: 296px;
+}
+#event_wrap div.event_knowhow_contant02 > div > input[type="text"]{
+	width:230px;
+	height: 19px;
+	padding:0 5px;
+	margin:0 5px 0 5px;
+}
+#event_wrap div > div > button{
+	width: 42px;
+	height: 23px;
+	font-size:12px;
+	color:#1d1d1d;
+}
+#event_wrap div.event_knowhow_contant03{	
+	position:relative;
+	margin-top:40px;
+	width:1000px;
+	height:1891px;
+	background:url(../../images/event/140519/bg_event_blog01.gif) no-repeat 0 -54px;
+}
+#event_wrap div.event_knowhow_contant03 > div{
+	position: absolute;
+}
+#event_wrap div.event_knowhow_contant03 > div > input[type="text"]{
+	width: 306px;
+	height: 19px;
+	padding:0 5px;
+	margin:0 5px 0 5px;
+}
+#event_wrap div.event_knowhow_contant03 > div > textarea{
+	padding:5px;
+	width: 306px;
+}
+#event_wrap div.event_knowhow_contant03 div.event_knowhow_input_widget_name_btn{
+	top:649px;
+	right:28px;
+}
+#event_wrap div.event_knowhow_contant03 div.event_knowhow_input_widget_code_btn{
+	top:710px;
+	right: 75px;
+}
+#event_wrap div.event_knowhow_contant03 div.event_knowhow_input_widget_code_btn > button{
+	position: absolute;
+	right:-47px;
+	top:2px;
+}
+#event_wrap div.event_knowhow_contant03 button.btn_naver_blog{
+	position: absolute;
+	width:203px;
+	height:127px;
+	background:url(../../images/event/140519/btn_naver03.gif) no-repeat 0 0;
+	bottom: 512px;
+	right: 49px;
+}
+#event_wrap div.event_knowhow_contant04{
+	background:url(../../images/event/140519/bg_event_sns01.gif) no-repeat 0 14px;
+	width:1000px;
+	height:834px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">	
+$(function(){
+	$("div.event_knowhow_tab ol li").click(function () {
+		$("div.event_knowhow_contant").addClass("hidden");
+		if($(this).hasClass("event_knowhow_tab01")) {
+			$("div.event_knowhow_contant01").removeClass("hidden");
+		} else if($(this).hasClass("event_knowhow_tab02")) {
+			$("div.event_knowhow_contant02").removeClass("hidden");
+		} else if($(this).hasClass("event_knowhow_tab03")) {
+			$("div.event_knowhow_contant03").removeClass("hidden");
+		} else if($(this).hasClass("event_knowhow_tab04")) {
+			$("div.event_knowhow_contant04").removeClass("hidden");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="event_wrap">
+	<h1><img src="/ex/images/event/140519/h1_title.gif" alt="언니가간다를 소개해 주세요" /></h1>
+	<ul class="event_wrap_tab">
+		<li class="event_wrap_tab01">
+			<h2>더블 이벤트 간단 설명</h2>
+			<ol>
+				<li class="event_wrap_txt_01">인터넷 공간 어디든 아래의 링크를 남겨 놓아요!</li>
+				<li class="event_wrap_input"><input type="text" name=""><button class="btn_copy01 mgl5">복사</button></li>
+				<li class="event_wrap_txt_02">
+					그럼 누눈가의 위의 링크를 클릭해서<br />
+					언니가간다에 접속!
+				</li>
+				<li class="event_wrap_txt_03">회원가입</li>
+				<li class="event_wrap_txt_04">30,000원 어치 옷을 구입한다면???</li>
+				<li class="event_wrap_txt_05">그럼~! 씨스터님에게 300원이 적립됩니다!</li>
+				<li class="event_wrap_txt_06">
+					위의 링크로 들어와서 가입한 씨스터님이 옷을 살때마다<br />
+					1년 동안 지속적으로 1%씩 꾸준히 이머니로 적립됩니다.
+				</li>
+			</ol>
+		</li>
+		<li class="event_wrap_tab02">
+			<h2>이머니 적립 TOP 15 RANK</h2>
+			<div>
+				<table>
+					<caption>언니가간다&#38;삼촌이간다 이머니 적립 Top 15&#33; RANK&#33;&#33;</caption>
+					<colgroup>
+						<col width="10%" />
+						<col width="45%" />
+						<col width="45%" />
+					</colgroup>
+					<thead>
+					<tr>
+						<th>순위</th>
+						<th>ID(이름)</th>
+						<th>총 적립 이머니</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>1.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>2.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>3.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>4.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>5.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>6.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>7.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>8.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>9.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>10.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>11.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>12.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>13.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>14.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					<tr>
+						<td>15.</td>
+						<td>ra**sal(이*영)</td>
+						<td class="right_txt pdr10">273,154 <span class="txt_emoney">emoney</span></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</li>
+	</ul>
+	<div class="event_knowhow_tab">
+		<h2><img src="/ex/images/event/140519/h2_title_knowhow.gif" alt="적립 know-how 전수!!!" /></h2>
+		<ol>
+			<li class="event_knowhow_tab01 mgl0"><span class="knowhow_tit">방법1</span><span class="knowhow_red_txt">지식인</span><span class="knowhow_blk_txt pdl10">강력추천!!</span></li>
+			<li class="event_knowhow_tab02"><span class="knowhow_tit">방법2</span><span class="knowhow_red_txt">까페</span><span class="knowhow_blk_txt">활용</span></li>
+			<li class="event_knowhow_tab03"><span class="knowhow_tit">방법3</span><span class="knowhow_red_txt">블로그</span><span class="knowhow_blk_txt">활용</span></li>
+			<li class="event_knowhow_tab04"><span class="knowhow_tit">방법4</span><span class="knowhow_red_txt">SNS</span><span class="knowhow_blk_txt">활용</span></li>
+		</ol>
+	</div>
+	<!-- event_knowhow_contant01 -->
+	<div class="event_knowhow_contant event_knowhow_contant01">
+		<ol>
+			<!-- event_knowhow_contant01_01 -->
+			<li class="event_knowhow_contant01_01">
+				<h3>STEP1. 네임카드(네임택) 설정하기!</h3>
+				<input type="text" name="" class="event_knowhow_input_info"><button class="event_knowhow_input_info_btn">복사</button>
+				<input type="text" name="" class="event_knowhow_input_explan"><button class="event_knowhow_input_explan_btn">복사</button>
+				<input type="text" name="" class="event_knowhow_input_url"><button class="event_knowhow_input_url_btn">복사</button>
+				<button class="event_knowhow_contant01_01_btn">바로가기</button>
+			</li>
+			<!-- // event_knowhow_contant01_01 -->
+			<!-- event_knowhow_contant01_02 -->
+			<li class="event_knowhow_contant01_02">
+				<h3>STEP2. 아래의 답변을 복사해주세요.</h3>
+				<ul class="event_knowhow_contant01_02_select_tab">
+					<li class="01_02_select_tab_on">10대 쇼핑몰</li>
+					<li>10대 패션</li>
+					<li>10대 옷</li>
+					<li>시스루룩</li>
+					<li>가디건 추천</li>
+					<li>후드티</li>
+					<li>점프수트</li>
+				</ul>
+				<ul class="event_knowhow_contant01_02_select_contants">
+					<li>
+						<ol class="select_contants_btn_number">
+							<li><button class="select_contants_btn_number_on">1</button></li>
+							<li><button>2</button></li>
+							<li><button>3</button></li>
+							<li><button>4</button></li>
+						</ol>
+						<p>10대 쇼핑몰10대 쇼핑몰10대
+							쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 
+							쇼핑몰10대 쇼핑몰10대
+							쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰10대 쇼핑몰<button class="copy_btn">복사하기</button></p>
+					</li>
+					<li class="hidden">
+						<ol class="select_contants_btn_number">
+							<li><button class="select_contants_btn_number_on">1</button></li>
+							<li><button>2</button></li>
+							<li><button>3</button></li>
+							<li><button>4</button></li>
+						</ol>
+						<p>10대 패션10대 패션10대 
+							패션10대 패션10대
+							패션10대 패션10대 
+							패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션10대 패션<button class="copy_btn">복사하기</button></p>
+					</li>
+					<li class="hidden">
+						<ol class="select_contants_btn_number">
+							<li><button class="select_contants_btn_number_on">1</button></li>
+							<li><button>2</button></li>
+							<li><button>3</button></li>
+							<li><button>4</button></li>
+						</ol>
+						<p>10대 옷10대 옷10대 
+							옷10대 옷10대 옷10대 
+							옷10대 옷10대 옷10대 
+							옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷10대 옷<button class="copy_btn">복사하기</button></p>
+					</li>
+					<li class="hidden">
+						<ol class="select_contants_btn_number">
+							<li><button class="select_contants_btn_number_on">1</button></li>
+							<li><button>2</button></li>
+							<li><button>3</button></li>
+							<li><button>4</button></li>
+						</ol>
+						<p>시스루룩시스루룩
+							시스루룩시스루룩시스
+							루룩시스루룩시스루룩시
+							스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩시스루룩<button class="copy_btn">복사하기</button></p>
+					</li>
+					<li class="hidden">
+						<p>가디건 추천가디건 
+							추천가디건 추천가디건
+							추천가디건 추천가디건
+							추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천가디건 추천<button class="copy_btn">복사하기</button></p>
+					</li>
+					<li class="hidden">
+						<ol class="select_contants_btn_number">
+							<li><button class="select_contants_btn_number_on">1</button></li>
+							<li><button>2</button></li>
+							<li><button>3</button></li>
+							<li><button>4</button></li>
+						</ol>
+						<p>후드티후드티후드티후드티후
+							드티후드티후드티후
+							드티후드티후드티후드
+							티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티후드티<button class="copy_btn">복사하기</button></p>
+					</li>
+					<li class="hidden">
+						<ol class="select_contants_btn_number">
+							<li><button class="select_contants_btn_number_on">1</button></li>
+							<li><button>2</button></li>
+							<li><button>3</button></li>
+							<li><button>4</button></li>
+						</ol>
+						<p>점프수트점프수트점프수트
+							점프수트점프수트점프수트점
+							프수트점프수트점프수트점프수트
+							점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트점프수트<button class="copy_btn">복사하기</button></p>
+					</li>
+				</ul>
+			</li>
+			<!-- // event_knowhow_contant01_02 -->
+			<!-- event_knowhow_contant01_03 -->
+			<li class="event_knowhow_contant01_03">
+				<h3>STEP3. 네이버 지식인 답변달러 가기</h3>
+				<img src="../../images/event/140519/bg_arrow02.png" alt="네이버 지식인 답변달러 가기" />
+				<a href="#"><img src="../../images/event/140519/btn_naver01.gif" alt="NAVER 지식인 바로가기" /></a>
+				<dl class="jisik_in_note">
+					<dt><span>지식인</span> 답변 달 때 주의할 점</dt>
+					<dd>
+						1. 답변 작성 중에 "언니가간다" 상호를 직접적으로 쓰면 안되요.
+						주소는 네임텍을 참고하라고 하셔야 됩니다.
+						여러개의 답변에 같은 상호명이 동일하게 들어가서
+						홍보성 답변으로 판단 될 경우 네이버에서 게정을 1~10일간 답변 못달게 막아 놓아요 ㅠㅠ
+					</dd>
+					<dd>
+						2. 해당 키워드로 검색하여 답변을 달 때 질문자의 질문글을 흩어 보신 후 답변을
+						약간은 질문에 맞게 수정하여 작성하셔야 좋아요~
+					</dd>
+				</dl>
+			</li>
+			<!-- // event_knowhow_contant01_03 -->
+		</ol>
+	</div>
+	<!-- // event_knowhow_contant01 -->
+	<!-- event_knowhow_contant02 -->
+	<div class="event_knowhow_contant event_knowhow_contant02 hidden">
+		<div class="input_link_name"><input type="text" name=""><button class="event_knowhow_input_info_btn">복사</button></div>
+		<div class="input_link_url"><input type="text" name=""><button class="event_knowhow_input_info_btn">복사</button></div>	
+	</div>
+	<!-- // event_knowhow_contant02 -->
+	<!-- event_knowhow_contant03 -->
+	<div class="event_knowhow_contant event_knowhow_contant03 hidden">
+		<div class="event_knowhow_input_widget_name_btn"><input type="text" name=""><button>복사</button></div>
+		<div class="event_knowhow_input_widget_code_btn">
+			<textarea name="" rows="9" cols="42"></textarea><button>복사</button>
+		</div>
+		<button class="btn_naver_blog"></button>
+	</div>
+	<!-- // event_knowhow_contant03 -->
+	<!-- event_knowhow_contant04 -->
+	<div class="event_knowhow_contant event_knowhow_contant04 hidden"></div>
+	<!-- // event_knowhow_contant04 -->
+</div>
+</body>
+</html>
